@@ -10,6 +10,7 @@ namespace _01.Count_Chars_in_a_String
 	{
 		static void Main(string[] args)
 		{
+			Console.WriteLine("Test");
 		}
 	}
 }
