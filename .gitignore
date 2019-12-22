@@ -165,3 +165,4 @@ node_modules/
 
 # JetBrains .idea
 .idea/
+/Associative Arrays/.vs/Associative Arrays/v15/Server/sqlite3
