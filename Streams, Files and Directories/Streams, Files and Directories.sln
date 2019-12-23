@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{A29D3F97-9CAD-47FA-87C7-F5D99D4CBA26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Odd Lines", "01. Odd Lines", "{3045AD5B-3032-4E67-B12D-1FF40897425F}"
+	ProjectSection(SolutionItems) = preProject
+		Input.txt = Input.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Line Numbers", "02. Line Numbers", "{DEA7F66D-E2B1-4143-8ADA-9452C91AF6DF}"
+	ProjectSection(SolutionItems) = preProject
+		Input1.txt = Input1.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Word Count", "03. Word Count", "{8871DECF-7C67-479F-A4AE-F6C272C20F79}"
+	ProjectSection(SolutionItems) = preProject
+		03.Input.txt = 03.Input.txt
+		words.txt = words.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Merge Files", "04. Merge Files", "{4333B496-9AEE-4DF6-A616-1276490E0ECD}"
+	ProjectSection(SolutionItems) = preProject
+		04.Input1.txt = 04.Input1.txt
+		04.Input2.txt = 04.Input2.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Slice File", "05. Slice File", "{7421A7F8-AC83-49C0-AA9E-3C8C18C9C677}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06. Folder Size", "06. Folder Size", "{70AC0A4A-EDF4-4151-A18B-A19F5E772141}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.OddLines", "01.OddLines\01.OddLines.csproj", "{25719B2E-2F50-42E1-AD29-9FD29B5EB45C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25719B2E-2F50-42E1-AD29-9FD29B5EB45C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25719B2E-2F50-42E1-AD29-9FD29B5EB45C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25719B2E-2F50-42E1-AD29-9FD29B5EB45C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25719B2E-2F50-42E1-AD29-9FD29B5EB45C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3045AD5B-3032-4E67-B12D-1FF40897425F} = {A29D3F97-9CAD-47FA-87C7-F5D99D4CBA26}
+		{DEA7F66D-E2B1-4143-8ADA-9452C91AF6DF} = {A29D3F97-9CAD-47FA-87C7-F5D99D4CBA26}
+		{8871DECF-7C67-479F-A4AE-F6C272C20F79} = {A29D3F97-9CAD-47FA-87C7-F5D99D4CBA26}
+		{4333B496-9AEE-4DF6-A616-1276490E0ECD} = {A29D3F97-9CAD-47FA-87C7-F5D99D4CBA26}
+		{7421A7F8-AC83-49C0-AA9E-3C8C18C9C677} = {A29D3F97-9CAD-47FA-87C7-F5D99D4CBA26}
+		{70AC0A4A-EDF4-4151-A18B-A19F5E772141} = {A29D3F97-9CAD-47FA-87C7-F5D99D4CBA26}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6F729AD-408E-48FD-9E37-B5D187185316}
+	EndGlobalSection
+EndGlobal
