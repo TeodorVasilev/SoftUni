@@ -35,7 +35,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.OddLines", "01.OddLines\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.LineNumbers", "02. Line Numbers\02.LineNumbers\02.LineNumbers.csproj", "{DA7EE546-514A-428B-A03D-778CF9D3D616}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{961A8F2C-419E-43BE-AE4F-677DECC931BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Word Count", "ConsoleApp1\03. Word Count.csproj", "{961A8F2C-419E-43BE-AE4F-677DECC931BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
