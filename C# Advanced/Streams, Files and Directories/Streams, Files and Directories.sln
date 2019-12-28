@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Word Count", "ConsoleAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Merge Files", "04.MergeFiles\04. Merge Files.csproj", "{6425A7F0-4C61-4105-83F9-6155F90BB822}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Slice File", "05. Slice File\05. Slice File.csproj", "{58F28346-06B7-4038-B147-0DEAE60B8A79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{6425A7F0-4C61-4105-83F9-6155F90BB822}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6425A7F0-4C61-4105-83F9-6155F90BB822}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6425A7F0-4C61-4105-83F9-6155F90BB822}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58F28346-06B7-4038-B147-0DEAE60B8A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58F28346-06B7-4038-B147-0DEAE60B8A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58F28346-06B7-4038-B147-0DEAE60B8A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58F28346-06B7-4038-B147-0DEAE60B8A79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +82,7 @@ Global
 		{DA7EE546-514A-428B-A03D-778CF9D3D616} = {DEA7F66D-E2B1-4143-8ADA-9452C91AF6DF}
 		{961A8F2C-419E-43BE-AE4F-677DECC931BA} = {8871DECF-7C67-479F-A4AE-F6C272C20F79}
 		{6425A7F0-4C61-4105-83F9-6155F90BB822} = {4333B496-9AEE-4DF6-A616-1276490E0ECD}
+		{58F28346-06B7-4038-B147-0DEAE60B8A79} = {7421A7F8-AC83-49C0-AA9E-3C8C18C9C677}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E6F729AD-408E-48FD-9E37-B5D187185316}
