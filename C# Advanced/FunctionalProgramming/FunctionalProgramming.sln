@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Filter By Age", "05. Fi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Action Print", "06. Action Print\06. Action Print.csproj", "{1B6FC653-C889-4346-BFCF-28EF934AC72F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Knights of Honor", "07. Knights of Honor\07. Knights of Honor.csproj", "{4DB8862C-5594-4B29-8797-EE8D9AB55E68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{1B6FC653-C889-4346-BFCF-28EF934AC72F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B6FC653-C889-4346-BFCF-28EF934AC72F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B6FC653-C889-4346-BFCF-28EF934AC72F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DB8862C-5594-4B29-8797-EE8D9AB55E68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DB8862C-5594-4B29-8797-EE8D9AB55E68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DB8862C-5594-4B29-8797-EE8D9AB55E68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DB8862C-5594-4B29-8797-EE8D9AB55E68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
