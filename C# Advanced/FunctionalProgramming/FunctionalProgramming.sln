@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Add VAT", "04. Add VAT\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Filter By Age", "05. Filter By Age\05. Filter By Age.csproj", "{59ABB265-3E1A-4B7A-9B28-C5E894915082}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Action Print", "06. Action Print\06. Action Print.csproj", "{1B6FC653-C889-4346-BFCF-28EF934AC72F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{59ABB265-3E1A-4B7A-9B28-C5E894915082}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59ABB265-3E1A-4B7A-9B28-C5E894915082}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59ABB265-3E1A-4B7A-9B28-C5E894915082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B6FC653-C889-4346-BFCF-28EF934AC72F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B6FC653-C889-4346-BFCF-28EF934AC72F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B6FC653-C889-4346-BFCF-28EF934AC72F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B6FC653-C889-4346-BFCF-28EF934AC72F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
