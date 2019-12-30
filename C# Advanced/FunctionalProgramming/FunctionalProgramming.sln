@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Reverse And Exclude", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. Predicate For Names", "12. Predicate For Names\12. Predicate For Names.csproj", "{83816C92-B352-4B5F-A26F-ADF1EA021017}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. Custom Comparator", "13. Custom Comparator\13. Custom Comparator.csproj", "{407417FD-90EF-4693-9B32-7FA800467DAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{83816C92-B352-4B5F-A26F-ADF1EA021017}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83816C92-B352-4B5F-A26F-ADF1EA021017}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83816C92-B352-4B5F-A26F-ADF1EA021017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{407417FD-90EF-4693-9B32-7FA800467DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{407417FD-90EF-4693-9B32-7FA800467DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{407417FD-90EF-4693-9B32-7FA800467DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{407417FD-90EF-4693-9B32-7FA800467DAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
