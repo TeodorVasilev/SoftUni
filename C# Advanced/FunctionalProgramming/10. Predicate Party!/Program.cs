@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _10.Predicate_Party_
+namespace _15.Predicate_Party_
 {
 	class Program
 	{
