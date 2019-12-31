@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Count Chars in a String
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. A Miner Task", "02. A Miner Task\02. A Miner Task.csproj", "{EB2699DE-72D6-4FC2-9A14-61D11D91A403}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Count Real Numbers", "03. Count Real Numbers\03. Count Real Numbers.csproj", "{17E8EA3F-2520-47A5-B088-896484FD9DE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EB2699DE-72D6-4FC2-9A14-61D11D91A403}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB2699DE-72D6-4FC2-9A14-61D11D91A403}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB2699DE-72D6-4FC2-9A14-61D11D91A403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17E8EA3F-2520-47A5-B088-896484FD9DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17E8EA3F-2520-47A5-B088-896484FD9DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17E8EA3F-2520-47A5-B088-896484FD9DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17E8EA3F-2520-47A5-B088-896484FD9DE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
