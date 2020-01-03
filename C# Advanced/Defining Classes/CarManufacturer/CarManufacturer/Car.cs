@@ -1,4 +1,6 @@
-﻿namespace CarManufacturer
+﻿using System.Linq;
+
+namespace CarManufacturer
 {
 	public class Car
 	{
@@ -9,6 +11,7 @@
 		private double fuelConsumption;
 		private Engine engine;
 		private Tire[] tires;
+		private double tirePressureSum;
 
 		public Car()
 		:this("VW", "Golf", 2025, 200, 10)
@@ -29,11 +32,12 @@
 			this.FuelConsumption = fuelConsumption;
 		}
 
-		public Car(string make, string model, int year, double fuelQuantity, double fuelConsumption, Engine engine, Tire[] tires)
+		public Car(string make, string model, int year, double fuelQuantity, double fuelConsumption, Engine engine, Tire[] tires, double tirePressureSum)
 			:this (make, model, year, fuelQuantity, fuelConsumption)
 		{
 			this.Engine = engine;
 			this.Tires = tires;
+			this.TirePressureSum = tirePressureSum;
 		}
 
 		public string Make { get; set; }
@@ -49,7 +53,9 @@
 		public Engine Engine { get; set; }
 
 		public Tire[] Tires  { get; set; }
-		
+
+		public double TirePressureSum { get; set; }
+
 		public void Drive(double distance)
 		{
 			double expenceFuel = FuelConsumption * distance / 100;
@@ -63,13 +69,14 @@
 				FuelQuantity -= distance / 100 * FuelConsumption;
 			}
 		}
-
+		
 		public string GetInformation()
 		{
 			var sb = new System.Text.StringBuilder();
 			sb.AppendLine($"Make: {this.Make}");
 			sb.AppendLine($"Model: {this.Model}");
 			sb.AppendLine($"Year: {this.Year}");
+			sb.AppendLine($"HorsePowers: {this.Engine.HorsePower}");
 			sb.Append($"Fuel: {this.FuelQuantity:F2}L");
 			return sb.ToString();
 		}
