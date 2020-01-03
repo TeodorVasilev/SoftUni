@@ -9,22 +9,22 @@
 		private double fuelConsumption;
 
 		public Car()
+		:this("VW", "Golf", 2025, 200, 10)
 		{
-
 		}
 
 		public Car(string make, string model, int year)
+			: this(make, model, year, 200, 10)
+		{
+		}
+
+		public Car(string make, string model, int year, double fuelQuantity, double fuelConsumption)
 		{
 			this.Make = make;
 			this.Model = model;
 			this.Year = year;
-		}
-
-		public Car(string make, string model, int year, double fuelQuantity, double fuelConsumption)
-			: this(make, model, year)
-		{
-			this.FuelConsumption = fuelConsumption;
 			this.FuelQuantity = fuelQuantity;
+			this.FuelConsumption = fuelConsumption;
 		}
 
 		public string Make { get; set; }
@@ -36,6 +36,63 @@
 		public double FuelQuantity { get; set; }
 
 		public double FuelConsumption { get; set; }
+		
+		//public string Make
+		//{
+		//	get
+		//	{
+		//		return this.make;
+		//	}
+		//	private set
+		//	{
+		//		this.make = value;
+		//	}
+		//}
+
+		//public string Model
+		//{
+		//	get
+		//	{
+		//		return this.model;
+		//	}
+		//	set
+		//	{
+		//		this.model = value;
+		//	}
+		//}
+
+		//public int Year
+		//{
+		//	get
+		//	{
+		//		return this.year;
+		//	}
+		//	set => this.year = value;
+		//}
+
+		//public double FuelQuantity
+		//{
+		//	get
+		//	{
+		//		return this.fuelQuantity;
+		//	}
+		//	set
+		//	{
+		//		this.fuelQuantity = value;
+		//	}
+		//}
+
+		//public double FuelConsumption
+		//{
+		//	get
+		//	{
+		//		return this.fuelConsumption;
+		//	}
+		//	set
+		//	{
+		//		this.fuelConsumption = value;
+		//	}
+		//}
 
 		public void Drive(double distance)
 		{

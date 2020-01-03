@@ -13,8 +13,9 @@ namespace CarManufacturer
 			double fuelConsumption = double.Parse(Console.ReadLine());
 
 			Car firstCar = new Car();
-			Car secondCar = new Car(make,model,year);
+			Car secondCar = new Car(make, model, year);
 			Car thirdCar = new Car(make, model, year, fuelQuantity, fuelConsumption);
+
 		}
 	}
 }
