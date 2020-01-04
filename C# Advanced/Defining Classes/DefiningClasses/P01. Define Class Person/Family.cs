@@ -6,19 +6,16 @@ namespace P01._Define_Class_Person
 {
 	public class Family
 	{
-		private List<Person> members;
-
-		public List<Person> Members { get; set; }
-
+		private List<Person> members = new List<Person>();
+		
 		public void AddMember(Person member)
 		{
-			Members.Add(member);
+			this.members.Add(member);
 		}
 
 		public Person GetOldestMember()
 		{
-			Person oldest = Members.Max
-			
+			return members.OrderByDescending(x => x.Age).FirstOrDefault();
 		}
 	}
 }
