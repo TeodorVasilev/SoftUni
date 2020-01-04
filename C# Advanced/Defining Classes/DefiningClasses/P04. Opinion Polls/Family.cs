@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace P01._Define_Class_Person
+{
+	public class Family
+	{
+		private List<Person> members = new List<Person>();
+		
+		public void AddMember(Person member)
+		{
+			this.members.Add(member);
+		}
+
+		public Person GetOldestMember()
+		{
+			return members.OrderByDescending(x => x.Age).FirstOrDefault();
+		}
+	}
+}
