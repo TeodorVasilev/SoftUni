@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace P06._Company_Roster
 {
-	class Program
+	class StartUp
 	{
 		static void Main(string[] args)
 		{

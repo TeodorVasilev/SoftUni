@@ -5,9 +5,11 @@ VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01. Define Class Person", "P01. Define Class Person\P01. Define Class Person.csproj", "{486EE247-782E-4038-BB18-CB01399C65DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06. Company Roster", "P06. Company Roster\P06. Company Roster.csproj", "{0674D083-3055-4B73-8E55-E39B5BD00974}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06. Company Roster", "P06. Company Roster\P06. Company Roster.csproj", "{0674D083-3055-4B73-8E55-E39B5BD00974}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07. Speed Racing", "P07. Speed Racing\P07. Speed Racing.csproj", "{370A80A1-4238-4135-AB19-27EDF3824117}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07. Speed Racing", "P07. Speed Racing\P07. Speed Racing.csproj", "{370A80A1-4238-4135-AB19-27EDF3824117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08. Raw Data", "P08. Raw Data\P08. Raw Data.csproj", "{F0AACC16-9F3B-4239-A1C7-84312C89042E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{370A80A1-4238-4135-AB19-27EDF3824117}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{370A80A1-4238-4135-AB19-27EDF3824117}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{370A80A1-4238-4135-AB19-27EDF3824117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0AACC16-9F3B-4239-A1C7-84312C89042E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0AACC16-9F3B-4239-A1C7-84312C89042E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0AACC16-9F3B-4239-A1C7-84312C89042E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0AACC16-9F3B-4239-A1C7-84312C89042E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

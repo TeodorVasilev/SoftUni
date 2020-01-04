@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace P07._Speed_Racing
 {
-	class Program
+	class StartUp
 	{
 		static void Main(string[] args)
 		{
