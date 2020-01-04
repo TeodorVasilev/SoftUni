@@ -35,5 +35,10 @@ namespace P01._Define_Class_Person
 			get { return age; }
 			set { age = value; }
 		}
+
+		public override string ToString()
+		{
+			return $"{this.name} - {this.age}";
+		}
 	}
 }
