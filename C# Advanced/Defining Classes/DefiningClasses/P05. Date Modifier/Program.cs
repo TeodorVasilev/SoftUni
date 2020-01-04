@@ -6,7 +6,14 @@ namespace P05._Date_Modifier
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			string firstDate = Console.ReadLine();
+			string secondDate = Console.ReadLine();
+
+			DateModifier dateModifier = new DateModifier();
+
+			var daysDiff = dateModifier.CalculateDayDiffrence(firstDate, secondDate);
+
+			Console.WriteLine(daysDiff);
 		}
 	}
 }
