@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace P10._Car_Salesman
+﻿namespace P10._Car_Salesman
 {
 	public class Engine
 	{
