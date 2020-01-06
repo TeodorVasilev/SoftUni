@@ -1,6 +1,6 @@
 ﻿namespace P12._Google
 {
-	class Company
+	public class Company
 	{
 		public Company(string name, string department, double salary)
 		{

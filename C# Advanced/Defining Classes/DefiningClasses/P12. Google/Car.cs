@@ -1,6 +1,6 @@
 ﻿namespace P12._Google
 {
-	class Car
+	public class Car
 	{
 		public Car(string model, int speed)
 		{
