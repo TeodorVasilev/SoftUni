@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace P13._Family_Tree
@@ -24,7 +25,10 @@ namespace P13._Family_Tree
 
 			sb.AppendLine(MainPerson.ToString());
 			sb.AppendLine("Parents:");
-			sb.AppendLine(string.Join(Environment.NewLine, Parents));
+			if(Parents.Any())
+			{
+				sb.AppendLine(string.Join(Environment.NewLine, Parents));
+			}
 			sb.AppendLine("Children:");
 			sb.AppendLine(string.Join(Environment.NewLine, Children));
 
