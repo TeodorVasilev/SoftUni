@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cars", "Cars\Cars.csproj", "{6B06BB14-64E0-480D-B6E7-721C161D805F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandyCrush Console", "CandyCrush Console\CandyCrush Console.csproj", "{BDEC97A8-2167-4156-B521-213011220C7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6B06BB14-64E0-480D-B6E7-721C161D805F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B06BB14-64E0-480D-B6E7-721C161D805F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B06BB14-64E0-480D-B6E7-721C161D805F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDEC97A8-2167-4156-B521-213011220C7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDEC97A8-2167-4156-B521-213011220C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDEC97A8-2167-4156-B521-213011220C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDEC97A8-2167-4156-B521-213011220C7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
