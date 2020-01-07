@@ -18,12 +18,7 @@ namespace Generic_Scale
 		
 		public bool AreEqual()
 		{
-			if(this.left.Equals(this.right))
-			{
-				return true;
-			}
-
-			return false;
+			return this.left.Equals(this.right);
 		}
 	}
 }
