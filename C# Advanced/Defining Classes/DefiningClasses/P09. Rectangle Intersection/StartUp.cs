@@ -16,6 +16,8 @@ namespace P09.Rectangle_Intersection
 			int numberOfRects = input[0];
 			int intsecChecks = input[1];
 
+			List<Rectangle> rectangles = new List<Rectangle>();
+
 			for (int i = 0; i < numberOfRects; i++)
 			{
 				string[] inputParts = Console.ReadLine().Split().ToArray();
@@ -25,6 +27,13 @@ namespace P09.Rectangle_Intersection
 				int height = int.Parse(inputParts[2]);
 				int x = int.Parse(inputParts[3]);
 				int y = int.Parse(inputParts[4]);
+
+				Point topLeft = new Point(x, y);
+				Point botRight = new Point(width, height);
+
+				Rectangle rectangle = new Rectangle(id, width, height, topLeft, botRight);
+
+				rectangles.Add(rectangle);
 			}
 			
 			for (int i = 0; i < intsecChecks; i++)
@@ -33,6 +42,11 @@ namespace P09.Rectangle_Intersection
 
 				string firstId = pairsToChek[0];
 				string secondId = pairsToChek[1];
+
+				Rectangle first = rectangles.Where(r => r.Id == firstId).FirstOrDefault();
+				Rectangle second = rectangles.Where(r => r.Id == secondId).FirstOrDefault();
+
+				Console.WriteLine(first.IntersectionChek(second));
 			}
 		}
 	}
