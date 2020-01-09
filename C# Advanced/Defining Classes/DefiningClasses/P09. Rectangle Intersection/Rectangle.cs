@@ -8,44 +8,12 @@ namespace P09.Rectangle_Intersection
 {
 	 public class Rectangle
 	 {
-		private string id;
+		public string Id { get; set; }
 
-		private int height;
+		public int Width { get; set; }
 
-		private int width;
+		public int Height { get; set; }
+
 		
-		private int x;
-
-		private int y;
-
-		public int Y
-		{
-			get { return y; }
-			set { y = value; }
-		}
-
-		public int X
-		{
-			get { return x; }
-			set { x = value; }
-		}
-
-		public int Width
-		{
-			get { return width; }
-			set { width = value; }
-		}
-
-		public int Height
-		{
-			get { return height; }
-			set { height = value; }
-		}
-
-		public string Id
-		{
-			get { return id; }
-			set { id = value; }
-		}
 	 }
 }
