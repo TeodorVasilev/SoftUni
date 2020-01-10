@@ -1,8 +1,8 @@
-﻿using PersonsInfo;
-using System.Collections.Generic;
-
-namespace _01._Sort_Persons_by_Name_and_Age
+﻿namespace _01._Sort_Persons_by_Name_and_Age
 {
+	using System;
+	using System.Collections.Generic;
+
 	public class Team
 	{
 		private string name;
@@ -11,37 +11,39 @@ namespace _01._Sort_Persons_by_Name_and_Age
 
 		public Team(string name)
 		{
+			this.Name = name;
 
+			this.firstTeam = new List<Person>();
+			this.reserveTeam = new List<Person>();
 		}
 
-		public List<Person> FirstTeam
+		public string Name { get; private set; }
+
+		public IReadOnlyList<Person> FirstTeam
 		{
-			get
-			{
-				return this.firstTeam;
-			}
-			set
-			{
-				this.firstTeam = value;
-			}
+			get => this.firstTeam.AsReadOnly();
 		}
 
-		public List<Person> ReserveTeam
+		public IReadOnlyList<Person> ReserveTeam
 		{
-			get
-			{
-				return this.reserveTeam;
-			}
-			set
-			{
-				this.reserveTeam = value;
-			}
+			get => this.reserveTeam.AsReadOnly();
 		}
 
-		public void AddPlayer(Person person)
+		public void AddPlayer(Person player)
 		{
+			if(player == null)
+			{
+				throw new ArgumentNullException("Player cannot be null!");
+			}
 
+			if(player.Age < 40)
+			{
+				this.firstTeam.Add(player);
+			}
+			else
+			{
+				this.reserveTeam.Add(player);
+			}
 		}
-
 	}
 }

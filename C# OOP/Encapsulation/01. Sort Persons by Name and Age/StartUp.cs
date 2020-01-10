@@ -1,5 +1,4 @@
-﻿//namespace _01._Sort_Persons_by_Name_and_Age
-namespace PersonsInfo
+﻿namespace _01._Sort_Persons_by_Name_and_Age
 {
 	using System;
 	using System.Collections.Generic;
@@ -26,12 +25,16 @@ namespace PersonsInfo
 
 				people.Add(person);
 			}
+			
+			var team = new Team("SoftUni");
 
-			var percent = decimal.Parse(Console.ReadLine());
+			foreach (var person in people)
+			{
+				team.AddPlayer(person);
+			}
 
-			//people.ForEach(p => p.IncreaseSalary(percent));
-
-			people.ForEach(Console.WriteLine);
+			Console.WriteLine($"First team has {team.FirstTeam.Count} players.");
+			Console.WriteLine($"Reserve team has {team.ReserveTeam.Count} players.");
 		}
 	}
 }

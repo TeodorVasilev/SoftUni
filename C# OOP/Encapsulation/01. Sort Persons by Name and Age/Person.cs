@@ -1,8 +1,7 @@
-﻿//namespace _01._Sort_Persons_by_Name_and_Age
-using System;
-
-namespace PersonsInfo
+﻿namespace _01._Sort_Persons_by_Name_and_Age
 {
+	using System;
+
 	public class Person
 	{
 		private string firstName;
@@ -60,7 +59,7 @@ namespace PersonsInfo
 			}
 			set
 			{
-				if (this.age <= 0)
+				if (value <= 0)
 				{
 					throw new ArgumentException("Age cannot be zero or a negative integer!");
 				}
