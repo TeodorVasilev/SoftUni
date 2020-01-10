@@ -24,6 +24,7 @@ namespace P03_JediGalaxy
 
             string command = Console.ReadLine();
             long sum = 0;
+
             while (command != "Let the Force be with you")
             {
                 int[] ivoS = command.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
@@ -59,7 +60,6 @@ namespace P03_JediGalaxy
             }
 
             Console.WriteLine(sum);
-
         }
     }
 }
