@@ -7,9 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Refactoring Code StudentSys
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03_StudentSystem", "C:\Users\T\Desktop\WorkingWithAbstraction\P03_StudentSystem\P03_StudentSystem.csproj", "{2E6C8DD6-1E6C-4BFA-9BC7-594EFA11C4A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01. Rhombus of Stars", "P01. Rhombus of Stars\P01. Rhombus of Stars.csproj", "{7880B397-5FAF-4412-ADD5-BD54FAB6D4FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01. Rhombus of Stars", "P01. Rhombus of Stars\P01. Rhombus of Stars.csproj", "{7880B397-5FAF-4412-ADD5-BD54FAB6D4FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02. Point in Rectangle", "P02. Point in Rectangle\P02. Point in Rectangle.csproj", "{D205594A-5799-4728-90C7-8C8A86760933}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02. Point in Rectangle", "P02. Point in Rectangle\P02. Point in Rectangle.csproj", "{D205594A-5799-4728-90C7-8C8A86760933}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Refacture Raw Data", "04. Raw Data\04. Refacture Raw Data.csproj", "{A2AA5091-9353-457A-8FE4-F46DDB4714A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01_RawData", "Resources\P01_RawData\P01_RawData.csproj", "{20B29345-DEA0-457B-828E-B92696F0DDE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{D205594A-5799-4728-90C7-8C8A86760933}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D205594A-5799-4728-90C7-8C8A86760933}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D205594A-5799-4728-90C7-8C8A86760933}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2AA5091-9353-457A-8FE4-F46DDB4714A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2AA5091-9353-457A-8FE4-F46DDB4714A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2AA5091-9353-457A-8FE4-F46DDB4714A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2AA5091-9353-457A-8FE4-F46DDB4714A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20B29345-DEA0-457B-828E-B92696F0DDE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20B29345-DEA0-457B-828E-B92696F0DDE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20B29345-DEA0-457B-828E-B92696F0DDE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20B29345-DEA0-457B-828E-B92696F0DDE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
