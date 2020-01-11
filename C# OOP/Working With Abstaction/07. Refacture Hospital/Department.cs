@@ -1,9 +1,10 @@
 ﻿namespace _07._Refacture_Hospital
 {
+	using System;
+	using System.Collections;
 	using System.Collections.Generic;
-	using System.Linq;
 
-	public class Department
+	public class Department : IEnumerable<Room>
 	{
 		private const int roomCount = 20;
 
@@ -19,30 +20,47 @@
 
 		public void AddRoom()
 		{
-			if(this.Rooms.Count < 20)
-			{
-				int number = this.Rooms.Count + 1;
+			int number = this.Rooms.Count + 1;
 
+			if (this.Rooms.Count < 20)
+			{
 				this.Rooms.Add(new Room(number));
+			}
+			else
+			{
+				throw new InvalidOperationException("There are no free places int this department!");
 			}
 		}
 
 		public bool CheckForFreePlace()
 		{
-			if (this.Rooms.Count <= 20)
+			for (int i = 0; i < this.Rooms.Count; i++)
 			{
-				for (int i = 0; i < this.Rooms.Count; i++)
-				{
-					Room room = Rooms[i];
+				Room room = Rooms[i];
 
-					if (room.ChekForFreeBed())
-					{
-						return true;
-					}
+				if (room.ChekForFreePlace())
+				{
+					return true;
+				}
+				else
+				{
+					this.AddRoom();
+					continue;
 				}
 			}
 
 			return false;
 		}
+		
+		public IEnumerator<Room> GetEnumerator()
+		{
+			for (int i = 0; i < this.Rooms.Count; i++)
+			{
+				yield return this.Rooms[i];
+			}
+		}
+
+		IEnumerator IEnumerable.GetEnumerator()
+			=> this.GetEnumerator();
 	}
 }

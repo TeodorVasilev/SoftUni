@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace _07._Refacture_Hospital
+﻿namespace _07._Refacture_Hospital
 {
+	using System;
+
 	public class Patient : IComparable<Patient>
 	{
 		public Patient(string name)
@@ -13,9 +13,12 @@ namespace _07._Refacture_Hospital
 
 		public int CompareTo(Patient other)
 		{
-			var nameCompare = this.Name.CompareTo(other.Name);
-
-			return nameCompare;
+			return this.Name.CompareTo(other.Name);
+		}
+		
+		public override string ToString()
+		{
+			return $"{this.Name}";
 		}
 	}
 }

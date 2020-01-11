@@ -1,6 +1,5 @@
 ﻿namespace _07._Refacture_Hospital
 {
-	using System;
 	using System.Collections.Generic;
 	using System.Linq;
 
@@ -8,24 +7,24 @@
 	{
 		public Hospital()
 		{
-			this.Departments = new HashSet<Department>();
-			this.Doctors = new HashSet<Doctor>();
+			this.Departments = new SortedSet<Department>(new DepartmentComparer());
+			this.Doctors = new SortedSet<Doctor>(new DoctorComparer());
 		}
 
-		public HashSet<Department> Departments { get; set; }
+		public SortedSet<Department> Departments { get; set; }
 
-		public HashSet<Doctor> Doctors { get; set; }
+		public SortedSet<Doctor> Doctors { get; set; }
 
 		public void AddDepartment(string departmentName)
 		{
 			Department department = new Department(departmentName);
-
-			for (int i = 1; i <= 20; i++)
+			
+			if(!this.Departments.Contains(department))
 			{
 				department.AddRoom();
+
+				this.Departments.Add(department);
 			}
-			
-			this.Departments.Add(department);
 		}
 
 		public void AddDoctor(string firstName, string lastName)
@@ -49,9 +48,9 @@
 			
 			if(department.CheckForFreePlace())
 			{
-				Room room = department.Rooms.Where(r => r.Beds.Count < 3).FirstOrDefault();
+				Room room = department.Rooms.Where(r => r.Patients.Count < 3).FirstOrDefault();
 
-				room.Beds.Add(new Bed(name));
+				room.Patients.Add(patient);
 				
 				doctor.AddPatient(patient);
 			}
