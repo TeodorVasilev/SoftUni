@@ -11,21 +11,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01. Rhombus of Stars", "P0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02. Point in Rectangle", "P02. Point in Rectangle\P02. Point in Rectangle.csproj", "{D205594A-5799-4728-90C7-8C8A86760933}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Refacture Raw Data", "04. Raw Data\04. Refacture Raw Data.csproj", "{A2AA5091-9353-457A-8FE4-F46DDB4714A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Refacture Raw Data", "04. Raw Data\04. Refacture Raw Data.csproj", "{A2AA5091-9353-457A-8FE4-F46DDB4714A3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01_RawData", "Resources\P01_RawData\P01_RawData.csproj", "{20B29345-DEA0-457B-828E-B92696F0DDE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Refacture Car Salesman", "05. Refacture Car Salesman\05. Refacture Car Salesman.csproj", "{84CA1E26-1046-4E12-A6A5-378E9B50F9C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. Refacture Car Salesman", "05. Refacture Car Salesman\05. Refacture Car Salesman.csproj", "{84CA1E26-1046-4E12-A6A5-378E9B50F9C0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02_CarsSalesman", "Resources\P02_CarsSalesman\P02_CarsSalesman.csproj", "{63FA2C6E-88E7-4FD5-A9C4-0F1D50213E25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Refacture Jedi Galaxy", "Refacture Jedi Galaxy\06. Refacture Jedi Galaxy.csproj", "{CDC4DA19-704C-4B46-A70F-5A310437EE36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. Refacture Jedi Galaxy", "Refacture Jedi Galaxy\06. Refacture Jedi Galaxy.csproj", "{CDC4DA19-704C-4B46-A70F-5A310437EE36}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03_JediGalaxy", "Resources\P03_JediGalaxy\P03_JediGalaxy.csproj", "{1B5B11D6-2749-4B3A-B4D7-0F2749E38D33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Refacture Hospital", "07. Refacture Hospital\07. Refacture Hospital.csproj", "{34CF96DF-09EE-4805-806E-C8B14F2E458A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07. Refacture Hospital", "07. Refacture Hospital\07. Refacture Hospital.csproj", "{34CF96DF-09EE-4805-806E-C8B14F2E458A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04_Hospital", "Resources\P04_Hospital\P04_Hospital.csproj", "{B691491B-9A93-4BD6-9B3E-768AEC0E1739}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Refacture Greedy Times", "08. Refacture Greedy Times\08. Refacture Greedy Times.csproj", "{186C463C-9A1A-4D9E-8223-4219C2EC254B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05_GreedyTimes", "Resources\P05_GreedyTimes\P05_GreedyTimes.csproj", "{3B0C9242-26E4-4408-A653-AD7300178CE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Refacture Sneaking", "09. Refacture Sneaking\09. Refacture Sneaking.csproj", "{72737198-5312-4B17-8F88-37A1F21510BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06_Sneaking", "Resources\P06_Sneaking\P06_Sneaking.csproj", "{845DB517-467F-4218-A8ED-24971828EB68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +89,22 @@ Global
 		{B691491B-9A93-4BD6-9B3E-768AEC0E1739}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B691491B-9A93-4BD6-9B3E-768AEC0E1739}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B691491B-9A93-4BD6-9B3E-768AEC0E1739}.Release|Any CPU.Build.0 = Release|Any CPU
+		{186C463C-9A1A-4D9E-8223-4219C2EC254B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{186C463C-9A1A-4D9E-8223-4219C2EC254B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{186C463C-9A1A-4D9E-8223-4219C2EC254B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{186C463C-9A1A-4D9E-8223-4219C2EC254B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B0C9242-26E4-4408-A653-AD7300178CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B0C9242-26E4-4408-A653-AD7300178CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B0C9242-26E4-4408-A653-AD7300178CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B0C9242-26E4-4408-A653-AD7300178CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72737198-5312-4B17-8F88-37A1F21510BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72737198-5312-4B17-8F88-37A1F21510BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72737198-5312-4B17-8F88-37A1F21510BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72737198-5312-4B17-8F88-37A1F21510BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{845DB517-467F-4218-A8ED-24971828EB68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{845DB517-467F-4218-A8ED-24971828EB68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{845DB517-467F-4218-A8ED-24971828EB68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{845DB517-467F-4218-A8ED-24971828EB68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
