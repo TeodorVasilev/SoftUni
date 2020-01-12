@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Sort Persons by Name and Age", "01. Sort Persons by Name and Age\01. Sort Persons by Name and Age.csproj", "{AA2A1B34-128F-4A91-BDE3-CE2E4824884A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Sort Persons by Name and Age", "01. Sort Persons by Name and Age\01. Sort Persons by Name and Age.csproj", "{AA2A1B34-128F-4A91-BDE3-CE2E4824884A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Class Box", "02. Class Box\02. Class Box.csproj", "{6EE95EF9-212D-4B3F-BD89-6E4FF40726B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Animal Farm", "03.Animal Farm\03.Animal Farm.csproj", "{B762EF21-FB07-4135-8500-0ABE5DC17056}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalFarm", "Resources\AnimalFarm\AnimalFarm\AnimalFarm.csproj", "{27DF6C90-3D80-4BBF-9D56-D12AE4FE8D57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Shopping Spree", "04. Shopping Spree\04. Shopping Spree.csproj", "{A4FF855B-47F9-4B47-A724-DD38CE48817D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{AA2A1B34-128F-4A91-BDE3-CE2E4824884A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA2A1B34-128F-4A91-BDE3-CE2E4824884A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA2A1B34-128F-4A91-BDE3-CE2E4824884A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EE95EF9-212D-4B3F-BD89-6E4FF40726B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EE95EF9-212D-4B3F-BD89-6E4FF40726B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EE95EF9-212D-4B3F-BD89-6E4FF40726B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EE95EF9-212D-4B3F-BD89-6E4FF40726B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B762EF21-FB07-4135-8500-0ABE5DC17056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B762EF21-FB07-4135-8500-0ABE5DC17056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B762EF21-FB07-4135-8500-0ABE5DC17056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B762EF21-FB07-4135-8500-0ABE5DC17056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27DF6C90-3D80-4BBF-9D56-D12AE4FE8D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27DF6C90-3D80-4BBF-9D56-D12AE4FE8D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27DF6C90-3D80-4BBF-9D56-D12AE4FE8D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27DF6C90-3D80-4BBF-9D56-D12AE4FE8D57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4FF855B-47F9-4B47-A724-DD38CE48817D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4FF855B-47F9-4B47-A724-DD38CE48817D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4FF855B-47F9-4B47-A724-DD38CE48817D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4FF855B-47F9-4B47-A724-DD38CE48817D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
