@@ -23,9 +23,8 @@
 
 			int enemyRow = 0;
 			int enemyCol = 0;
-			
-			int playerCurrentRow = 0;
-			int playerCurrentCol = 0;
+
+			int[] playerPosition = new int[2];
 
 			for (int row = 0; row < rows; row++)
 			{
@@ -43,124 +42,118 @@
 
 					if(room[row, col] == 'S')
 					{
-						playerCurrentRow = row;
-						playerCurrentCol = col;
+						playerPosition[0]= row;
+						playerPosition[1] = col;
 					}
 				}
 			}
 			
 			var directions = Console.ReadLine().ToCharArray();
-			
+
 			for (int i = 0; i < directions.Length; i++)
 			{
-				for (int row = 0; row < room.GetLength(0); row++)
+				for (int row = 0; row < rows; row++)
 				{
-					for (int col = 0; col < room.GetLength(1); col++)
-					{
-						if(CheckIfPlayerDies(room, playerCurrentRow, playerCurrentCol))
+					for (int col = 0; col < cols; col++)
+					{	
+						//Enemy movement
+
+						if(room[row,col] == 'b')
 						{
-							room[playerCurrentRow, playerCurrentCol] = 'X';
+							if(row >= 0 && row < rows && col + 1 >= 0 && col + 1 < cols)
+							{
+								room[row, col] = '.';
+								room[row, col + 1] = 'b';
+								col++;
+							}
+							else
+							{
+								//If on matrix edge flips direction
 
-							PrintIfPlayerDies(room, playerCurrentRow, playerCurrentCol);
-
-							return;
+								room[row, col] = 'd';
+							}
 						}
-
-						if(ChekIfEnemyIsKilled(playerCurrentRow, enemyRow))
+						else if(room[row,col] == 'd')
 						{
-							room[enemyRow, enemyCol] = 'X';
-
-							PrintIfEnemyIsKilled(room);
-
-							return;
-						}
-						
-						if (room[row, col] == 'b')
-						{
-							//if (EnemyDirectionSwitch(room, col))
-							//{
-							//	room[row, col] = 'd';
-							//}
-							//else
-							//{
-								EnemyMove(room, row, col, 'b');
-							//}
-						}
-						if (room[row, col] == 'd')
-						{
-							//if (EnemyDirectionSwitch(room, col))
-							//{
-							//	room[row, col] = 'b';
-							//}
-							//else
-							//{
-								EnemyMove(room, row, col, 'b');
-							//}
-						}
-						if (room[row, col] == 'S')
-						{
-							PlayerMove(room, row, col, 'S', directions[i]);
-							playerCurrentRow = row;
-							playerCurrentCol = col;
+							if(row >= 0 && row < rows && col - 1 >= 0 && col - 1 < cols)
+							{
+								room[row, col] = '.';
+								room[row, col - 1] = 'd';
+							}
+							else
+							{
+								room[row, col] = 'b';
+							}
 						}
 					}
+				}
+				
+				//Chek if player is killed
+
+				if(CheckIfPlayerDies(room, playerPosition[0], playerPosition[1]))
+				{
+					room[playerPosition[0], playerPosition[1]] = 'X';
+
+					Console.WriteLine($"Sam died at {playerPosition[0]}, {playerPosition[1]}");
+
+					Print(room);
+
+					return;
+				}
+
+				//Player Movement
+				
+				room[playerPosition[0], playerPosition[1]] = '.';
+
+				playerPosition = PlayerMove(room, playerPosition, 'S', directions[i]);
+
+				room[playerPosition[0], playerPosition[1]] = 'S';
+				
+				//Chek if enemy is killed
+
+				if (ChekIfEnemyIsKilled(playerPosition[0], enemyRow))
+				{
+					room[enemyRow, enemyCol] = 'X';
+
+					Console.WriteLine("Nikoladze killed!");
+
+					Print(room);
+
+					return;
 				}
 			}
 		}
 
-		public static void PlayerMove(char[,] room, int row, int col, char player, char direction)
+		public static int[] PlayerMove(char[,] room, int[] playerPosition, char player, char direction)
 		{
-			switch(direction)
+			int row = playerPosition[0];
+			int col = playerPosition[1];
+
+			switch (direction)
 			{
 				case 'U':
-					room[row, col] = '.';
-					room[row - 1, col] = player;
+					row = row - 1;
+					playerPosition[0] = row;
 					break;
 				case 'D':
-					room[row, col] = '.';
-					room[row + 1, col] = player;
+					row = row + 1;
+					playerPosition[0] = row;
 					break;
 				case 'L':
-					room[row, col] = '.';
-					room[row, col - 1] = player;
+					col = col - 1;
+					playerPosition[1] = col;
 					break;
 				case 'R':
-					room[row, col] = '.';
-					room[row, col + 1] = player;
+					col = col + 1;
+					playerPosition[1] = col;
 					break;
 				case 'W':
 					break;
 			}
+
+			return playerPosition;
 		}
-		
-		public static void EnemyMove(char[,] room, int row, int col, char enemy)
-		{
-			if (EnemyDirectionSwitch(room, row, col))
-			{
-				if (enemy == 'b')
-				{
-					room[row, col] = 'd';
-				}
-				else if (enemy == 'd')
-				{
-					room[row, col] = 'b';
-				}
 
-				return;
-			}
-
-			room[row, col] = '.';
-
-			if(enemy == 'b')
-			{
-				room[row, col + 1] = enemy;
-			}
-			else if(enemy == 'd')
-			{
-				room[row, col - 1] = enemy;
-			}
-		}
-		
 		public static bool CheckIfPlayerDies(char[,] room, int playerRow, int playerCol)
 		{
 			for (int row = 0; row < room.GetLength(0); row++)
@@ -197,40 +190,13 @@
 			return false;
 		}
 
-		public static bool EnemyDirectionSwitch(char[,] room ,int row, int col)
+		public static void Print(char[,] room)
 		{
-			if (col == 0 || col == room.GetLength(1) - 1)
-			{
-				return true;
-			}
-
-			return false;
-		}
-
-		public static void PrintIfEnemyIsKilled(char[,] room)
-		{
-			Console.WriteLine("Nikoladze killed!");
-
 			for (int row = 0; row < room.GetLength(0); row++)
 			{
 				for (int col = 0; col < room.GetLength(1); col++)
 				{
-					Console.Write(room[row,col]);
-				}
-
-				Console.WriteLine();
-			}
-		}
-
-		public static void PrintIfPlayerDies(char[,] room, int playerRow, int playerCol)
-		{
-			Console.WriteLine($"Sam died at {playerRow}, {playerCol}");
-
-			for (int row = 0; row < room.GetLength(0); row++)
-			{
-				for (int col = 0; col < room.GetLongLength(1); col++)
-				{
-					Console.Write(room[row,col]);
+					Console.Write(room[row, col]);
 				}
 
 				Console.WriteLine();
