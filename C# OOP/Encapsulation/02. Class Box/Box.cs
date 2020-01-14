@@ -10,48 +10,27 @@
 
 		public Box(double length, double width, double height)
 		{
-			this.Length = length;
-			this.Width = width;
-			this.Height = height;
+			ValidateParameter(length, "Length");
+			this.length = length;
+			ValidateParameter(width, "Width");
+			this.width = width;
+			ValidateParameter(height, "Height");
+			this.height = height;
 		}
 
-		public double Length
+		public double SurfaceArea()
 		{
-			get => this.length;
-
-			private set
-			{
-
-				this.ValidateParameter(value, nameof(this.Width));
-
-				this.length = value;
-			}
+			return 2 * (this.length * this.width) + this.LateralSurfaceArea();
 		}
 
-		public double Width
+		public double LateralSurfaceArea()
 		{
-			get => this.width;
-
-			private set
-			{
-
-				this.ValidateParameter(value, nameof(this.Width));
-
-				this.width = value;
-			}
+			return 2 * (this.length * this.height + this.width * this.height);
 		}
 
-		public double Height
+		public double Volume()
 		{
-			get => this.height;
-
-			private set
-			{
-
-				this.ValidateParameter(value, nameof(this.Width));
-
-				this.height = value;
-			}
+			return this.width * this.height * this.length;
 		}
 
 		private void ValidateParameter(double value, string parameter)
@@ -60,21 +39,6 @@
 			{
 				throw new ArgumentException($"{parameter} cannot be zero or negative.");
 			}
-		}
-
-		public double Volume()
-		{
-			return this.length * this.width * this.height;
-		}
-
-		public double LateralSurfaceArea()
-		{
-			return 2 * this.length * this.height + 2 * this.width * this.height;
-		}
-
-		public double SurfaceArea()
-		{
-			return 2 * this.length * this.width + 2 * this.length * this.height + 2 * this.width * this.height;
 		}
 	}
 }

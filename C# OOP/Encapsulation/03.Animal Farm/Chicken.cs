@@ -1,8 +1,7 @@
-﻿using System;
-using System.Text;
-
-namespace _03.Animal_Farm
+﻿namespace _03.Animal_Farm
 {
+	using System;
+
 	public class Chicken
 	{
 		private const int MinAge = 0;
@@ -23,9 +22,9 @@ namespace _03.Animal_Farm
 
 			private set
 			{
-				if(value.Length <= 0)
+				if (value == string.Empty || value == null || value == " ")
 				{
-					throw new InvalidOperationException("Name cannot be empty.");
+					throw new ArgumentException("Name cannot be empty.");
 				}
 
 				this.name = value;
@@ -38,11 +37,11 @@ namespace _03.Animal_Farm
 
 			private set
 			{
-				if(value < MinAge && value > MaxAge)
+				if (value <= MinAge || value >= MaxAge)
 				{
-					throw new InvalidOperationException("Age should be between 0 and 15.");
+					throw new ArgumentException("Age should be between 0 and 15.");
 				}
-
+				
 				this.age = value;
 			}
 		}
