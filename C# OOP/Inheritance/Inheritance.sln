@@ -3,15 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Single Inheritance", "01. Single Inheritance\01. Single Inheritance.csproj", "{3E091B5D-5222-43F3-9D86-42E1C9F960FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Single Inheritance", "01. Single Inheritance\01. Single Inheritance.csproj", "{3E091B5D-5222-43F3-9D86-42E1C9F960FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Multiple Inheritance", "02. Multiple Inheritance\02. Multiple Inheritance.csproj", "{0025EFD5-A6F6-477F-96D4-5A8DBE07D357}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Multiple Inheritance", "02. Multiple Inheritance\02. Multiple Inheritance.csproj", "{0025EFD5-A6F6-477F-96D4-5A8DBE07D357}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Hierarchical Inheritance", "03. Hierarchical Inheritance\03. Hierarchical Inheritance.csproj", "{5AA1EBFB-FD0A-4562-B814-E961C4AE43DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Hierarchical Inheritance", "03. Hierarchical Inheritance\03. Hierarchical Inheritance.csproj", "{5AA1EBFB-FD0A-4562-B814-E961C4AE43DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Random List", "04. Random List\04. Random List.csproj", "{469DC093-87E3-4897-83C1-B00BA6611847}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Random List", "04. Random List\04. Random List.csproj", "{469DC093-87E3-4897-83C1-B00BA6611847}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Stack of Strings", "05. Stack of Strings\05. Stack of Strings.csproj", "{A83C2E7D-490D-446B-A4DC-ACB1A4D235A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. Stack of Strings", "05. Stack of Strings\05. Stack of Strings.csproj", "{A83C2E7D-490D-446B-A4DC-ACB1A4D235A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Person", "06. Person\06. Person.csproj", "{2ED31E00-F74F-4D4A-BA62-D12A716ADD3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Zoo", "07. Zoo\07. Zoo.csproj", "{1F816AF5-C575-444D-9553-B84D90C6FBD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Players and Monsters", "08. Players and Monsters\08. Players and Monsters.csproj", "{74096825-252E-4B9C-9B94-EA9E5E538623}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Need for Speed", "09. Need for Speed\09. Need for Speed.csproj", "{EE8D79F2-13AD-48AF-AD6D-6E4EF80647AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +47,22 @@ Global
 		{A83C2E7D-490D-446B-A4DC-ACB1A4D235A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A83C2E7D-490D-446B-A4DC-ACB1A4D235A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A83C2E7D-490D-446B-A4DC-ACB1A4D235A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ED31E00-F74F-4D4A-BA62-D12A716ADD3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ED31E00-F74F-4D4A-BA62-D12A716ADD3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ED31E00-F74F-4D4A-BA62-D12A716ADD3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ED31E00-F74F-4D4A-BA62-D12A716ADD3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F816AF5-C575-444D-9553-B84D90C6FBD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F816AF5-C575-444D-9553-B84D90C6FBD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F816AF5-C575-444D-9553-B84D90C6FBD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F816AF5-C575-444D-9553-B84D90C6FBD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74096825-252E-4B9C-9B94-EA9E5E538623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74096825-252E-4B9C-9B94-EA9E5E538623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74096825-252E-4B9C-9B94-EA9E5E538623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74096825-252E-4B9C-9B94-EA9E5E538623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE8D79F2-13AD-48AF-AD6D-6E4EF80647AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE8D79F2-13AD-48AF-AD6D-6E4EF80647AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE8D79F2-13AD-48AF-AD6D-6E4EF80647AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE8D79F2-13AD-48AF-AD6D-6E4EF80647AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
