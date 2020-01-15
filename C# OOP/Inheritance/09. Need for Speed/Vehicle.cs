@@ -8,20 +8,23 @@
 		{
 			this.HorsePower = horsePower;
 			this.Fuel = fuel;
-			this.DefaultFuelConsumption = defaultFuelConsumption;
 		}
 
-		public int HorsePower { get; set; }
+		public int HorsePower { get; private set; }
 
-		public double Fuel { get; set; }
-
-		public double DefaultFuelConsumption { get; set; }
-
-		public virtual double FuelConsumption { get; set; }
+		public double Fuel { get; private set; }
+		
+		public virtual double FuelConsumption
+			=> defaultFuelConsumption;
 
 		public virtual void Drive(double kilometers)
 		{
+			bool canDrive = this.Fuel - kilometers * this.FuelConsumption >= 0;
 
+			if (canDrive)
+			{
+				this.Fuel -= kilometers * this.FuelConsumption;
+			}
 		}
 	}
 }

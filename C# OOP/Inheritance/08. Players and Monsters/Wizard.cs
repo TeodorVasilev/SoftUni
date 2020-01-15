@@ -1,4 +1,4 @@
-﻿nnamespace _08._Players_and_Monsters
+﻿namespace _08._Players_and_Monsters
 {
 	public class Wizard : Hero
 	{
