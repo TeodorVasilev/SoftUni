@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csproj", "{E1DF9F80-D717-4ED7-8E4B-227336134A8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shapes", "Shapes\Shapes.csproj", "{E1DF9F80-D717-4ED7-8E4B-227336134A8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cars", "Cars\Cars.csproj", "{17884D48-38AD-4295-B83F-DF2D460D7FD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cars", "Cars\Cars.csproj", "{17884D48-38AD-4295-B83F-DF2D460D7FD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonInfo", "PersonInfo\PersonInfo.csproj", "{04B2F1D1-81F7-4772-973E-CCEFF23825B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ferrari", "Ferrari\Ferrari.csproj", "{6E1CE58F-E543-479F-BE2E-ADB9D9CEF124}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telephony", "Telephony\Telephony.csproj", "{E6221FBF-C324-4627-8A30-5EE417D28AAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{17884D48-38AD-4295-B83F-DF2D460D7FD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17884D48-38AD-4295-B83F-DF2D460D7FD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17884D48-38AD-4295-B83F-DF2D460D7FD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04B2F1D1-81F7-4772-973E-CCEFF23825B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04B2F1D1-81F7-4772-973E-CCEFF23825B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04B2F1D1-81F7-4772-973E-CCEFF23825B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04B2F1D1-81F7-4772-973E-CCEFF23825B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E1CE58F-E543-479F-BE2E-ADB9D9CEF124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E1CE58F-E543-479F-BE2E-ADB9D9CEF124}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E1CE58F-E543-479F-BE2E-ADB9D9CEF124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E1CE58F-E543-479F-BE2E-ADB9D9CEF124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6221FBF-C324-4627-8A30-5EE417D28AAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6221FBF-C324-4627-8A30-5EE417D28AAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6221FBF-C324-4627-8A30-5EE417D28AAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6221FBF-C324-4627-8A30-5EE417D28AAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
