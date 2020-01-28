@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace Vehicles
+﻿namespace Vehicles
 {
+	using System;
+
 	public abstract class Vehicle
 	{
 		private double fuelQuantity;
@@ -21,6 +21,11 @@ namespace Vehicles
 
 			private set
 			{
+				if(value <= 0)
+				{
+					throw new ArgumentException("Capacity cannot be negative or zero");
+				}
+
 				this.tankCapacity = value;
 			}
 		}
@@ -48,6 +53,11 @@ namespace Vehicles
 
 			protected set
 			{
+				if(value <= 0)
+				{
+					throw new ArgumentException("Consumption cannot be negative or zero");
+				}
+
 				this.fuelConsumption = value;
 			}
 		}
@@ -78,7 +88,7 @@ namespace Vehicles
 			{
 				throw new ArgumentException("Fuel must be a positive number");
 			}
-			else
+			else if(amount + this.FuelQuantity <= tankCapacity)
 			{
 				this.FuelQuantity += amount;
 			}

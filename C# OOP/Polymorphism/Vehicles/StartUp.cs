@@ -6,17 +6,27 @@
 	{
 		static void Main(string[] args)
 		{
-			string[] carArgs = Console.ReadLine().Split();
+			Car car = null;
+			Truck truck = null;
+			Bus bus = null;
 
-			Car car = new Car(double.Parse(carArgs[1]), double.Parse(carArgs[2]), double.Parse(carArgs[3]));
+			for (int i = 0; i < 3; i++)
+			{
+				string[] vehicleArgs = Console.ReadLine().Split();
 
-			string[] truckArgs = Console.ReadLine().Split();
-
-			Truck truck = new Truck(double.Parse(truckArgs[1]), double.Parse(truckArgs[2]), double.Parse(truckArgs[3]));
-
-			string[] busArgs = Console.ReadLine().Split();
-
-			Bus bus = new Bus(double.Parse(busArgs[1]), double.Parse(busArgs[2]), double.Parse(busArgs[3]));
+				if (vehicleArgs[0] == "Car")
+				{
+					car = new Car(double.Parse(vehicleArgs[1]), double.Parse(vehicleArgs[2]), double.Parse(vehicleArgs[3]));
+				}
+				else if(vehicleArgs[0] == "Truck")
+				{
+					truck = new Truck(double.Parse(vehicleArgs[1]), double.Parse(vehicleArgs[2]), double.Parse(vehicleArgs[3]));
+				}
+				else if(vehicleArgs[0] == "Bus")
+				{
+					bus = new Bus(double.Parse(vehicleArgs[1]), double.Parse(vehicleArgs[2]), double.Parse(vehicleArgs[3]));
+				}
+			}
 
 			int n = int.Parse(Console.ReadLine());
 
