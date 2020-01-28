@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operations", "Operations\Operations.csproj", "{4B56F099-22AE-4BB0-9E3B-EE596BD75D58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Operations", "Operations\Operations.csproj", "{4B56F099-22AE-4BB0-9E3B-EE596BD75D58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animals", "Animals\Animals.csproj", "{25AE6593-F550-465A-85D5-82E1D08351DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Animals", "Animals\Animals.csproj", "{25AE6593-F550-465A-85D5-82E1D08351DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csproj", "{22AD1E27-19D0-4C67-BFD7-EBE282F41A70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shapes", "Shapes\Shapes.csproj", "{22AD1E27-19D0-4C67-BFD7-EBE282F41A70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicles", "Vehicles\Vehicles.csproj", "{6F9826A4-EE25-43C9-80D9-A2FC71284D4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{22AD1E27-19D0-4C67-BFD7-EBE282F41A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22AD1E27-19D0-4C67-BFD7-EBE282F41A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22AD1E27-19D0-4C67-BFD7-EBE282F41A70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F9826A4-EE25-43C9-80D9-A2FC71284D4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F9826A4-EE25-43C9-80D9-A2FC71284D4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F9826A4-EE25-43C9-80D9-A2FC71284D4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F9826A4-EE25-43C9-80D9-A2FC71284D4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
