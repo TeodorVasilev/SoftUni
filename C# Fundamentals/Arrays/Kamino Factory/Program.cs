@@ -11,67 +11,80 @@
 
 			string input = Console.ReadLine();
 
-			int sampleNumber = 0;
-			int bestSequenceIndex = 0;
-			int bestSequenceLength = 0;
-			int bestSampleNumber = 0;
-
 			int[] bestSequence = new int[n];
+
+			int bestSequenceSum = 0;
+			int bestSequenceLength = -1;
+			int bestSequenceStartIndex = -1;
+			int bestSampleNumber = 0;
+			int sampleNumber = 0;
 
 			while (input != "Clone them!")
 			{
-				int[] sequence = input.Split(new char[] { '!' }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
 				sampleNumber++;
+				int[] sequence = input.Split("!", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
 
 				int sequenceLength = 0;
-				int sequenceIndex = 0;
+				int sequenceStartIndex = 0;
+				int sequenceEndIndex = 0;
+				int sequenceSum = 0;
+				bool isBestSequence = false;
 
-				for (int i = 0; i < n - 1; i++)
+				int length = 0;
+
+				for (int i = 0; i < sequence.Length; i++)
 				{
-					if (sequence[i] == 1)
+					if (sequence[i] != 1)
 					{
-						if (sequence[i] == sequence[i + 1])
-						{
-							sequenceIndex = i;
-							sequenceLength++;
-						}
-					}
-					else
-					{
+						length = 0;
 						continue;
 					}
+
+					length++;
+
+					if (length > sequenceLength)
+					{
+						sequenceLength = length;
+						sequenceEndIndex = i;
+					}
 				}
+
+				sequenceStartIndex = sequenceEndIndex - sequenceLength + 1;
+				sequenceSum = sequence.Sum();
 
 				if (sequenceLength > bestSequenceLength)
 				{
-					bestSequenceLength = sequenceLength;
-					bestSequenceIndex = sequenceIndex;
-					bestSequence = sequence;
-					bestSampleNumber = sampleNumber;
+					isBestSequence = true;
 				}
 				else if (sequenceLength == bestSequenceLength)
 				{
-					if (sequenceIndex < bestSequenceIndex)
+					if (sequenceStartIndex < bestSequenceStartIndex)
 					{
-						bestSequenceIndex = sequenceIndex;
-						bestSequence = sequence;
-						bestSampleNumber = sampleNumber;
+						isBestSequence = true;
 					}
-					else if (sequenceIndex == bestSequenceIndex)
+					else if (sequenceStartIndex == bestSequenceStartIndex)
 					{
-						if (sequence.Sum() > bestSequence.Sum())
+						if (sequenceSum > bestSequenceSum)
 						{
-							bestSequence = sequence;
-							bestSampleNumber = sampleNumber;
+							isBestSequence = true;
 						}
 					}
+				}
+
+				if (isBestSequence)
+				{
+					bestSequence = sequence;
+					bestSequenceLength = sequenceLength;
+					bestSequenceStartIndex = sequenceStartIndex;
+					bestSequenceSum = sequenceSum;
+					bestSampleNumber = sampleNumber;
 				}
 
 				input = Console.ReadLine();
 			}
 
-			Console.WriteLine($"Best DNA sample {bestSampleNumber} with sum: {bestSequence.Sum()}.");
-			Console.WriteLine(string.Join(" ", bestSequence));
+			Console.WriteLine($"Best DNA sample {bestSampleNumber} with sum: {bestSequenceSum}.");
+			Console.WriteLine(String.Join(" ", bestSequence));
 		}
 	}
 }
