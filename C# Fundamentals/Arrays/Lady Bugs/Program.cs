@@ -20,7 +20,10 @@
 			{
 				if (initialIndexes[i] < field.Length)
 				{
-					field[initialIndexes[i]] = 1;
+					if(initialIndexes[i] > -1)
+					{
+						field[initialIndexes[i]] = 1;
+					}
 				}
 			}
 
@@ -36,9 +39,15 @@
 				string[] commands = input.Split();
 
 				int bugIndex = int.Parse(commands[0]);
+				//Chek if index is in range
+				if (bugIndex < 0 || bugIndex > field.Length - 1)
+				{
+					input = Console.ReadLine();
+					continue;
+				}
 
 				//Chek if there is a bug on given index and if index is in range
-				if(ChekIfThereIsABug(field, bugIndex) == false)
+				if (ChekIfThereIsABug(field, bugIndex) == false)
 				{
 					input = Console.ReadLine();
 					continue;
@@ -56,8 +65,8 @@
 					continue;
 				}
 
-				int jumpsCount = 1;
-
+				////////int jumpsCount = 1;
+				int jumpsCount = flyLength;
 
 				if(direction == "left")
 				{
@@ -66,8 +75,8 @@
 						//If there is a bug continue to fly by the same length
 						if (ChekIfThereIsABug(field, bugIndex - flyLength))
 						{
-							jumpsCount++;
-							flyLength *= jumpsCount;
+							////////jumpsCount++;
+							flyLength += jumpsCount;
 
 							//Chek if the bug flies out of range
 							if(ChekIfFlyLengthIsInRange(field, bugIndex, flyLength, direction) == false)
@@ -80,9 +89,9 @@
 								continue;
 							}
 						}
-
-						if(ChekIfThereIsABug(field, bugIndex - flyLength) == false)
+						else
 						{
+							//If there is no bug land
 							field[bugIndex] = 0;
 							field[bugIndex - flyLength] = 1;
 							jumpsCount = 0;
@@ -91,21 +100,43 @@
 				}
 				else if(direction == "right")
 				{
+					while (jumpsCount != 0)
+					{
+						//If there is a bug continue to fly by the same length
+						if (ChekIfThereIsABug(field, bugIndex + flyLength))
+						{
+							/////////jumpsCount++;
+							flyLength += jumpsCount;
 
+							//Chek if the bug flies out of range
+							if (ChekIfFlyLengthIsInRange(field, bugIndex, flyLength, direction) == false)
+							{
+								field[bugIndex] = 0;
+								break;
+							}
+							else
+							{
+								continue;
+							}
+						}
+						else
+						{
+							//If there is no bug land
+							field[bugIndex] = 0;
+							field[bugIndex + flyLength] = 1;
+							jumpsCount = 0;
+						}
+					}
 				}
 
 				input = Console.ReadLine();
 			}
+
+			Console.WriteLine(string.Join(" ", field));
 		}
 
 		public static bool ChekIfThereIsABug(int[] field, int index)
 		{
-			//Chek if index is in range
-			if (index < 0 || index > field.Length - 1)
-			{
-				return false;
-			}
-
 			if(field[index] == 1)
 			{
 				return true;
@@ -118,14 +149,9 @@
 
 		public static bool ChekIfFlyLengthIsInRange(int[] field, int index, int flyLength, string direction)
 		{
-			if(flyLength < 0)
-			{
-				return false;
-			}
-
 			if(direction == "left")
 			{
-				if(index - flyLength < 0)
+				if (index - flyLength < 0 || index - flyLength > field.Length - 1)
 				{
 					return false;
 				}
@@ -136,7 +162,7 @@
 			}
 			else
 			{
-				if (index + flyLength > field.Length - 1)
+				if (index + flyLength > field.Length - 1 || index + flyLength < 0)
 				{
 					return false;
 				}
