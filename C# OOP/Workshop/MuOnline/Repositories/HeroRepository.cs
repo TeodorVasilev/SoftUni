@@ -32,7 +32,7 @@
         {
             if (item == null)
             {
-                throw new ArgumentNullException("Item cannot be null!");
+                throw new ArgumentNullException("Hero cannot be null!");
             }
 
             var targetItem = this.heroes.FirstOrDefault(x => ((IIdentifiable)x).Username == item);
@@ -44,7 +44,7 @@
         {
             if (item == null)
             {
-                throw new ArgumentNullException("Item cannot be null!");
+                throw new ArgumentNullException("Hero cannot be null!");
             }
 
             bool isRemoved = this.heroes.Remove(item);

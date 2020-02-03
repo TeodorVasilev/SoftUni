@@ -103,7 +103,7 @@
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentException("Stamin cannot be less than zero!");
+                    throw new ArgumentException("Stamina cannot be less than zero!");
                 }
 
                 this.stamina = value;
@@ -180,6 +180,11 @@
 
         public void TakeDamage(int damagePoints)
         {
+            if (!this.IsAlive)
+            {
+                throw new InvalidOperationException("Hero is not alive!");
+            }
+
             if (this.TotalAgilityPoints > 0)
             {
                 this.TotalAgilityPoints -= damagePoints;
@@ -192,7 +197,7 @@
 
         public void AddExperience(int experience)
         {
-            if (this.IsAlive)
+            if (!this.IsAlive)
             {
                 throw new InvalidOperationException("Hero is not alive!");
             }

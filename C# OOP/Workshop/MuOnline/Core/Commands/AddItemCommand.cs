@@ -24,7 +24,7 @@
 
             this.itemRepository.Add(item);
 
-            return $"Successfully created new {itemType}!";
+            return $"Successfully created new {itemType.GetType().Name}!";
         }
     }
 }

@@ -28,6 +28,7 @@
             serviceCollection.AddTransient<IItemFactory, ItemFactory>();
             serviceCollection.AddTransient<IMonsterFactory, MonsterFactory>();
             serviceCollection.AddTransient<IHeroFactory, HeroFactory>();
+            serviceCollection.AddTransient<ICommandInterpreter, CommandInterpreter>();
 
             serviceCollection.AddSingleton<IRepository<IHero>, HeroRepository>();
             serviceCollection.AddSingleton<IRepository<IMonster>, MonsterRepository>();
