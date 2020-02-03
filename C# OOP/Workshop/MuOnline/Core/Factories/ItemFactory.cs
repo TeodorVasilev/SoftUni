@@ -11,9 +11,11 @@
     {
         public IItem Create(string itemType)
         {
+            var itemName = itemType.ToLower();
+
             var type = Assembly.GetExecutingAssembly()
                 .GetTypes()
-                .FirstOrDefault(x => x.Name.ToLower() == itemType);
+                .FirstOrDefault(x => x.Name.ToLower() == itemName);
 
             if (type == null)
             {

@@ -10,15 +10,21 @@
     {
         public IHero Create(string heroType, string username)
         {
-            var hero = Assembly
+            var heroName = heroType.ToLower();
+
+            var type = Assembly
                 .GetExecutingAssembly()
                 .GetTypes()
                 .FirstOrDefault(t => t.Name.ToLower() == heroType);
 
-            if(hero == null)
+            if(type == null)
             {
                 throw new ArgumentNullException("Invalid hero type!");
             }
+
+            var hero = (IHero)Activator.CreateInstance(type, username);
+
+            return hero;
         }
     }
 }

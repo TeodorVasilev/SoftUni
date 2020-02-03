@@ -1,13 +1,33 @@
 ﻿using MuOnline.Core.Factories.Contracts;
 using MuOnline.Models.Monsters.Contracts;
+using System;
+using System.Linq;
+using System.Reflection;
 
 namespace MuOnline.Core.Factories
 {
     public class MonsterFactory : IMonsterFactory
     {
-        public IMonster Create(string monsterType, int attackPoints, int defensePoints)
+        public IMonster Create(string monsterTypeName)
         {
-            throw new System.NotImplementedException();
+            var monsterTypeNameLower = monsterTypeName.ToLower();
+
+            var type = Assembly
+                .GetExecutingAssembly()
+                .GetTypes()
+                .Where(x => (typeof(IMonster).IsAssignableFrom(x)))
+                .FirstOrDefault(x => x.Name.ToLower() == monsterTypeNameLower);
+
+            //TODO not sure? > test
+
+            if(type == null)
+            {
+                throw new ArgumentNullException("Invalid monster type!");
+            }
+
+            var monster = (IMonster)Activator.CreateInstance(type);
+
+            return monster;
         }
     }
 }

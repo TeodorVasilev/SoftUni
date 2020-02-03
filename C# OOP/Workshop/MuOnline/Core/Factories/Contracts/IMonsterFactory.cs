@@ -4,6 +4,6 @@
 
     public interface IMonsterFactory
     {
-        IMonster Create(string monsterType, int attackPoints, int defensePoints);
+        IMonster Create(string monsterType);
     }
 }
