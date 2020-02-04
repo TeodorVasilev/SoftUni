@@ -1,10 +1,11 @@
 ﻿namespace MuOnline.Repositories
 {
-    using MuOnline.Models.Heroes.HeroContracts;
-    using MuOnline.Repositories.Contracts;
     using System;
     using System.Collections.Generic;
     using System.Linq;
+
+    using Models.Heroes.HeroContracts;
+    using Repositories.Contracts;
 
     public class HeroRepository : IRepository<IHero>
     {

@@ -1,10 +1,11 @@
 ﻿namespace MuOnline.Core.Factories
 {
-    using MuOnline.Core.Factories.Contracts;
-    using MuOnline.Models.Heroes.HeroContracts;
     using System;
     using System.Linq;
     using System.Reflection;
+
+    using Core.Factories.Contracts;
+    using Models.Heroes.HeroContracts;
 
     public class HeroFactory : IHeroFactory
     {

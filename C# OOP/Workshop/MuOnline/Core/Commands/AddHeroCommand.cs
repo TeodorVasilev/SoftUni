@@ -1,11 +1,11 @@
-﻿using MuOnline.Core.Commands.Contracts;
-using MuOnline.Core.Factories.Contracts;
-using MuOnline.Models.Heroes.HeroContracts;
-using MuOnline.Repositories;
-using MuOnline.Repositories.Contracts;
-
-namespace MuOnline.Core.Commands
+﻿namespace MuOnline.Core.Commands
 {
+    using Commands.Contracts;
+    using Factories.Contracts;
+    using Models.Heroes.HeroContracts;
+    using Repositories;
+    using Repositories.Contracts;
+
     public class AddHeroCommand : ICommand
     {
         private const string succesfullMessage = "Successfully created hero: {0}!";

@@ -1,11 +1,10 @@
-﻿using MuOnline.Core.Commands.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
-
-namespace MuOnline.Core
+﻿namespace MuOnline.Core
 {
+	using System;
+	using System.Threading;
+
+	using Core.Commands.Contracts;
+
 	public class ExitCommand : ICommand
 	{
 		public string Execute(string[] inputArgs)

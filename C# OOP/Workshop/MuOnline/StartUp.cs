@@ -1,16 +1,17 @@
 ﻿namespace MuOnline
 {
     using System;
+    using Microsoft.Extensions.DependencyInjection;
+
     using Core;
     using Core.Contracts;
-    using Microsoft.Extensions.DependencyInjection;
-    using MuOnline.Core.Factories;
-    using MuOnline.Core.Factories.Contracts;
-    using MuOnline.Models.Heroes.HeroContracts;
-    using MuOnline.Models.Items.Contracts;
-    using MuOnline.Models.Monsters.Contracts;
-    using MuOnline.Repositories;
-    using MuOnline.Repositories.Contracts;
+    using Core.Factories;
+    using Core.Factories.Contracts;
+    using Models.Heroes.HeroContracts;
+    using Models.Items.Contracts;
+    using Models.Monsters.Contracts;
+    using Repositories;
+    using Repositories.Contracts;
 
     public class StartUp
     {

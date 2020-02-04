@@ -1,10 +1,10 @@
-﻿using MuOnline.Core.Commands.Contracts;
-using MuOnline.Core.Factories.Contracts;
-using MuOnline.Models.Monsters.Contracts;
-using MuOnline.Repositories.Contracts;
-
-namespace MuOnline.Core.Commands
+﻿namespace MuOnline.Core.Commands
 {
+    using Core.Commands.Contracts;
+    using Core.Factories.Contracts;
+    using Models.Monsters.Contracts;
+    using Repositories.Contracts;
+
     public class AddMonsterCommand : ICommand
     {
         private const string succesfullMesage = "Successfully created monster: {0}";

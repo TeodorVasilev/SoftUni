@@ -1,10 +1,10 @@
-﻿using MuOnline.Core.Commands.Contracts;
-using MuOnline.Models.Heroes.HeroContracts;
-using MuOnline.Models.Items.Contracts;
-using MuOnline.Repositories.Contracts;
-
-namespace MuOnline.Core.Commands
+﻿namespace MuOnline.Core.Commands
 {
+    using Core.Commands.Contracts;
+    using Models.Heroes.HeroContracts;
+    using Models.Items.Contracts;
+    using Repositories.Contracts;
+
     public class AddItemToHero : ICommand
     {
         private const string successfullMessage = "Succesfully added {0} to hero {1}";

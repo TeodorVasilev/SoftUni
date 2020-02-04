@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MuOnline.Models.Items.Weapons.Scipters
+﻿namespace MuOnline.Models.Items.Weapons.Scipters
 {
 	public class SecretScepter : Item
 	{

@@ -1,10 +1,11 @@
 ﻿namespace MuOnline.Repositories
 {
-    using MuOnline.Models.Monsters.Contracts;
-    using MuOnline.Repositories.Contracts;
     using System;
     using System.Collections.Generic;
     using System.Linq;
+
+    using Models.Monsters.Contracts;
+    using Repositories.Contracts;
 
     public class MonsterRepository : IRepository<IMonster>
     {

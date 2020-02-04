@@ -1,14 +1,9 @@
 ﻿namespace MuOnline.Core.Commands
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Text;
-
-	using MuOnline.Core.Commands.Contracts;
-    using MuOnline.Models.Heroes.HeroContracts;
-    using MuOnline.Models.Monsters.Contracts;
-    using MuOnline.Repositories;
-    using MuOnline.Repositories.Contracts;
+	using Core.Commands.Contracts;
+    using Models.Heroes.HeroContracts;
+    using Models.Monsters.Contracts;
+    using Repositories.Contracts;
 
     public class AttackMonsterCommand : ICommand
 	{

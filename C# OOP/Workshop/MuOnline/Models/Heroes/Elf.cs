@@ -1,9 +1,5 @@
 ﻿namespace MuOnline.Models.Heroes
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
+{   
     public class Elf : Hero
     {
         private const int strength = 15;
