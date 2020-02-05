@@ -16,7 +16,7 @@
             var type = Assembly
                 .GetExecutingAssembly()
                 .GetTypes()
-                .FirstOrDefault(t => t.Name.ToLower() == heroType);
+                .FirstOrDefault(t => t.Name.ToLower() == heroName);
 
             if(type == null)
             {

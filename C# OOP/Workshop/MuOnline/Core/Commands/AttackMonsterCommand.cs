@@ -18,8 +18,6 @@
 			this.monsterRepository = monsterRepository;
 		}
 
-		//Hero Username
-		//Monster Name
 		public string Execute(string[] inputArgs)
 		{
 			string heroUsername = inputArgs[0];
@@ -33,6 +31,7 @@
 
 			while (hero.IsAlive && monster.IsAlive)
 			{
+				monster.TakeDamage(heroAtackPoints);
 				hero.TakeDamage(monsterAtackPoints);
 				var xp = monster.TakeDamage(heroAtackPoints);
 				((IProgress)hero).AddExperience(xp);

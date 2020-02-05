@@ -19,17 +19,14 @@
 
         public string Read(string[] args)
         {
-            //AddItem itemName
 
             string commandName = args[0].ToLower() + suffix;
             string[] inputArgs = args.Skip(1).ToArray();
-
-            //find types
-
+            //fix null when AddItemToHero Command
             var type = Assembly.GetExecutingAssembly()
                 .GetTypes()
                 .FirstOrDefault(x => x.Name.ToLower() == commandName);
-
+            
             if(type == null)
             {
                 throw new ArgumentNullException("Invalid Command!");

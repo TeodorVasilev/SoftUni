@@ -3,7 +3,6 @@
     using Commands.Contracts;
     using Factories.Contracts;
     using Models.Heroes.HeroContracts;
-    using Repositories;
     using Repositories.Contracts;
 
     public class AddHeroCommand : ICommand

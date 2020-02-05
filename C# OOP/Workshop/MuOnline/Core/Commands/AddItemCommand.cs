@@ -23,8 +23,8 @@
             var item = this.itemFactory.Create(itemType);
 
             this.itemRepository.Add(item);
-            //fix
-            return $"Successfully created new {itemType.GetType().Name}!";
+
+            return $"Successfully created new {item.GetType().Name}!";
         }
     }
 }
