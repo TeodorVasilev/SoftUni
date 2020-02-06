@@ -5,14 +5,14 @@
     using Models.Items.Contracts;
     using Repositories.Contracts;
 
-    public class AddItemToHero : ICommand
+    public class AddItemToHeroCommand : ICommand
     {
         private const string successfullMessage = "Succesfully added {0} to hero {1}";
 
         private readonly IRepository<IHero> heroRepository;
         private readonly IRepository<IItem> itemRepository;
 
-        public AddItemToHero(IRepository<IHero> heroRepository, IRepository<IItem> itemRepository)
+        public AddItemToHeroCommand(IRepository<IHero> heroRepository, IRepository<IItem> itemRepository)
         {
             this.heroRepository = heroRepository;
             this.itemRepository = itemRepository;

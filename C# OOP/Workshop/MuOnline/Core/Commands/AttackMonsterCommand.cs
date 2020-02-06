@@ -29,10 +29,12 @@
 			var heroAtackPoints = hero.TotalAttackPoints;
 			var monsterAtackPoints = hero.TotalAttackPoints;
 
+			//fix hero totalstamina points
+
 			while (hero.IsAlive && monster.IsAlive)
 			{
 				monster.TakeDamage(heroAtackPoints);
-				hero.TakeDamage(monsterAtackPoints);
+				//hero.TakeDamage(monsterAtackPoints);
 				var xp = monster.TakeDamage(heroAtackPoints);
 				((IProgress)hero).AddExperience(xp);
 			}

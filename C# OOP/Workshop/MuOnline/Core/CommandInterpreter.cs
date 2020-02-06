@@ -22,8 +22,9 @@
 
             string commandName = args[0].ToLower() + suffix;
             string[] inputArgs = args.Skip(1).ToArray();
-            //fix null when AddItemToHero Command
-            var type = Assembly.GetExecutingAssembly()
+
+            var type = Assembly
+                .GetExecutingAssembly()
                 .GetTypes()
                 .FirstOrDefault(x => x.Name.ToLower() == commandName);
             

@@ -6,9 +6,11 @@
     using HeroContracts;
     using Inventories;
     using Inventories.Contracts;
+    using MuOnline.Utilities;
 
     public abstract class Hero : IHero, IIdentifiable, IProgress
     {
+        //fix props
         private string username;
         private int strength;
         private int agility;
@@ -35,12 +37,15 @@
             this.Resets = 0;
 
             this.Inventory = new Inventory();
+
+            this.TotalAgilityPoints = GetTotalAgilityPoints();
+            this.TotalStaminaPoints = GetTotalStaminaPoints();
         }
 
         public IInventory Inventory { get; }
 
         public bool IsAlive
-            => this.totalStaminaPoints > 0;
+            => this.TotalStaminaPoints > 0;
 
         public string Username
         {
@@ -67,10 +72,7 @@
             }
             private set
             {
-                if (value < 0)
-                {
-                    throw new ArgumentException("Strength cannot be less than zero!");
-                }
+                Validator.ValidateLessThanZero(value, nameof(this.Strength));
 
                 this.strength = value;
             }
@@ -84,10 +86,7 @@
             }
             private set
             {
-                if (value < 0)
-                {
-                    throw new ArgumentException("Agility cannot be less than zero!");
-                }
+                Validator.ValidateLessThanZero(value, nameof(this.Agility));
 
                 this.agility = value;
             }
@@ -101,10 +100,7 @@
             }
             private set
             {
-                if (value < 0)
-                {
-                    throw new ArgumentException("Stamina cannot be less than zero!");
-                }
+                Validator.ValidateLessThanZero(value, nameof(this.Stamina));
 
                 this.stamina = value;
             }
@@ -118,10 +114,7 @@
             }
             private set
             {
-                if (value < 0)
-                {
-                    throw new ArgumentException("Energy cannot be less than zero!");
-                }
+                Validator.ValidateLessThanZero(value, nameof(this.Energy));
 
                 this.energy = value;
             }
@@ -135,10 +128,7 @@
             }
             private set
             {
-                if (value < 0)
-                {
-                    throw new ArgumentException("Experience cannot be less than zero!");
-                }
+                Validator.ValidateLessThanZero(value, nameof(this.Experience));
 
                 this.experience = value;
             }
@@ -152,10 +142,7 @@
             }
             private set
             {
-                if (value < 0)
-                {
-                    throw new ArgumentException("Levels cannot be less than zero!");
-                }
+                Validator.ValidateLessThanZero(value, nameof(this.Level));
 
                 this.level = value;
             }
@@ -169,10 +156,7 @@
             }
             private set
             {
-                if (value < 0)
-                {
-                    throw new ArgumentException("Resets cannot be less than zero!");
-                }
+                Validator.ValidateLessThanZero(value, nameof(this.Resets));
 
                 this.resets = value;
             }
@@ -231,7 +215,6 @@
                this.Energy * 5 / 100 +
                this.Inventory.Items.Sum(x => x.Strength);
 
-
         public int TotalEnergyPoints
             => this.Energy +
                this.Inventory.Items.Sum(x => x.Energy);
@@ -240,12 +223,13 @@
         {
             get
             {
-                return this.totalAgilityPoints;
+               return this.totalAgilityPoints;
             }
             private set
             {
-                this.totalAgilityPoints = this.Agility +
-                                          this.Inventory.Items.Sum(x => x.Agility);
+                Validator.ValidateLessThanZero(value, nameof(this.TotalAgilityPoints));
+
+                this.totalAgilityPoints = value;
             }
         }
 
@@ -257,9 +241,20 @@
             }
             private set
             {
-                this.totalStaminaPoints = this.Stamina +
-                    this.Inventory.Items.Sum(x => x.Stamina);
+                Validator.ValidateLessThanZero(value, nameof(this.TotalStaminaPoints));
+
+                this.totalStaminaPoints = value;
             }
+        }
+
+        private int GetTotalAgilityPoints()
+        {
+            return this.Agility + this.Inventory.Items.Sum(x => x.Agility);
+        }
+
+        private int GetTotalStaminaPoints()
+        {
+            return this.Stamina + this.Inventory.Items.Sum(x => x.Stamina);
         }
     }
 }

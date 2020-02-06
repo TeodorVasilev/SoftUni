@@ -4,7 +4,7 @@
     {
         private const int strength = 60;
         private const int agility = 40;
-        private const int stamina = 30;
+        private const int stamina = 70;
         private const int energy = 20;
 
         public DarkKnight(string username)
