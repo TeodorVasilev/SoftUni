@@ -3,49 +3,53 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sign of Integer Numbers", "Sign of Integer Numbers\Sign of Integer Numbers.csproj", "{C567398B-205C-41F9-B564-0C4EC7F514CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sign of Integer Numbers", "Sign of Integer Numbers\Sign of Integer Numbers.csproj", "{C567398B-205C-41F9-B564-0C4EC7F514CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grades", "Grades\Grades.csproj", "{56B3B365-9018-44C0-86E8-8203CD072575}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grades", "Grades\Grades.csproj", "{56B3B365-9018-44C0-86E8-8203CD072575}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculations", "Calculations\Calculations.csproj", "{FA0F8934-D506-4AEB-B5F6-54AAD2967693}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculations", "Calculations\Calculations.csproj", "{FA0F8934-D506-4AEB-B5F6-54AAD2967693}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Printing Triangle", "Printing Triangle\Printing Triangle.csproj", "{02337856-7FA1-4ECC-8AAB-943C610ABE3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Printing Triangle", "Printing Triangle\Printing Triangle.csproj", "{02337856-7FA1-4ECC-8AAB-943C610ABE3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orders", "Orders\Orders.csproj", "{E2A7E010-2A75-49B9-8171-28839C669258}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orders", "Orders\Orders.csproj", "{E2A7E010-2A75-49B9-8171-28839C669258}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculate Rectangle Area", "Calculate Rectangle Area\Calculate Rectangle Area.csproj", "{8289888A-24D3-4DDF-BF09-53A4A13EE5CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculate Rectangle Area", "Calculate Rectangle Area\Calculate Rectangle Area.csproj", "{8289888A-24D3-4DDF-BF09-53A4A13EE5CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repeat String", "Repeat String\Repeat String.csproj", "{DE58DE70-9509-49E0-9A54-DDDE5626FB1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repeat String", "Repeat String\Repeat String.csproj", "{DE58DE70-9509-49E0-9A54-DDDE5626FB1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math Power", "Math Power\Math Power.csproj", "{EB11FE48-BE52-4D33-B1E8-4DA278C09CB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Math Power", "Math Power\Math Power.csproj", "{EB11FE48-BE52-4D33-B1E8-4DA278C09CB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greater of Two Values", "Greater of Two Values\Greater of Two Values.csproj", "{F6482AF9-727B-4BB7-B073-10337C7F9499}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greater of Two Values", "Greater of Two Values\Greater of Two Values.csproj", "{F6482AF9-727B-4BB7-B073-10337C7F9499}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiply Evens by Odds", "Multiply Evens by Odds\Multiply Evens by Odds.csproj", "{F9184992-8DA7-4C91-931F-475FD12DEE36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multiply Evens by Odds", "Multiply Evens by Odds\Multiply Evens by Odds.csproj", "{F9184992-8DA7-4C91-931F-475FD12DEE36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math operations", "Math operations\Math operations.csproj", "{83734AC8-589B-4193-B6DE-8C8709B6C629}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Math operations", "Math operations\Math operations.csproj", "{83734AC8-589B-4193-B6DE-8C8709B6C629}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smallest of Three Numbers", "Smallest of Three Numbers\Smallest of Three Numbers.csproj", "{6595CB25-E62F-41F5-B9DD-62E8C2228D79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smallest of Three Numbers", "Smallest of Three Numbers\Smallest of Three Numbers.csproj", "{6595CB25-E62F-41F5-B9DD-62E8C2228D79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vowels Count", "Vowels Count\Vowels Count.csproj", "{519F4981-4255-4E0A-934E-E0293AC76447}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vowels Count", "Vowels Count\Vowels Count.csproj", "{519F4981-4255-4E0A-934E-E0293AC76447}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Characters in Range", "Characters in Range\Characters in Range.csproj", "{B80688B6-6D0D-4A1F-BB2C-61B24AFA534D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Characters in Range", "Characters in Range\Characters in Range.csproj", "{B80688B6-6D0D-4A1F-BB2C-61B24AFA534D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Password Validator", "Password Validator\Password Validator.csproj", "{543FEE35-5D5F-4C53-824C-D9F0248D0A7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Password Validator", "Password Validator\Password Validator.csproj", "{543FEE35-5D5F-4C53-824C-D9F0248D0A7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Add and Subtract", "Add and Subtract\Add and Subtract.csproj", "{1C5BF509-BF77-4D43-8217-BFA06C797415}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Add and Subtract", "Add and Subtract\Add and Subtract.csproj", "{1C5BF509-BF77-4D43-8217-BFA06C797415}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Middle Characters", "Middle Characters\Middle Characters.csproj", "{2AB1BB19-5E93-4AFA-A0EA-A02F34E4CFAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Middle Characters", "Middle Characters\Middle Characters.csproj", "{2AB1BB19-5E93-4AFA-A0EA-A02F34E4CFAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NxN Matrix", "NxN Matrix\NxN Matrix.csproj", "{A257BD1F-588E-4D73-B748-FEED845EC765}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NxN Matrix", "NxN Matrix\NxN Matrix.csproj", "{A257BD1F-588E-4D73-B748-FEED845EC765}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial Division", "Factorial Division\Factorial Division.csproj", "{D4A6EFDC-6F6E-4637-BD43-892FE92B15EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factorial Division", "Factorial Division\Factorial Division.csproj", "{D4A6EFDC-6F6E-4637-BD43-892FE92B15EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome Integers", "Palindrome Integers\Palindrome Integers.csproj", "{217F485C-BF2F-4ED2-9E1E-B8E6AD04A07B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Palindrome Integers", "Palindrome Integers\Palindrome Integers.csproj", "{217F485C-BF2F-4ED2-9E1E-B8E6AD04A07B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Top Number", "Top Number\Top Number.csproj", "{1CD0A81C-92D2-4156-8DB3-85B962B70806}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Top Number", "Top Number\Top Number.csproj", "{1CD0A81C-92D2-4156-8DB3-85B962B70806}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array Manipulator", "Array Manipulator\Array Manipulator.csproj", "{69ADE131-DE62-4F58-8694-451DC5D04D1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Array Manipulator", "Array Manipulator\Array Manipulator.csproj", "{69ADE131-DE62-4F58-8694-451DC5D04D1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data Types", "Data Types\Data Types.csproj", "{A6FEAB8A-1DA7-4670-8BD3-C317F9C9F92B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Center Point", "Center Point\Center Point.csproj", "{903975B6-1E66-485B-BF19-FB8856EA5BB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +145,14 @@ Global
 		{69ADE131-DE62-4F58-8694-451DC5D04D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69ADE131-DE62-4F58-8694-451DC5D04D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69ADE131-DE62-4F58-8694-451DC5D04D1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6FEAB8A-1DA7-4670-8BD3-C317F9C9F92B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6FEAB8A-1DA7-4670-8BD3-C317F9C9F92B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6FEAB8A-1DA7-4670-8BD3-C317F9C9F92B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6FEAB8A-1DA7-4670-8BD3-C317F9C9F92B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{903975B6-1E66-485B-BF19-FB8856EA5BB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903975B6-1E66-485B-BF19-FB8856EA5BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903975B6-1E66-485B-BF19-FB8856EA5BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903975B6-1E66-485B-BF19-FB8856EA5BB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
