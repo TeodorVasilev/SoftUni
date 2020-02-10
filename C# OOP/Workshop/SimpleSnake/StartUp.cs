@@ -1,5 +1,6 @@
 ﻿namespace SimpleSnake
 {
+    using SimpleSnake.Constants;
     using SimpleSnake.Core;
     using SimpleSnake.GameObjects;
     using Utilities;
@@ -12,8 +13,9 @@
 
             DrawManager drawManager = new DrawManager();
             Snake snake = new Snake();
+            Coordinate boardCoordinate = new Coordinate(GameConstant.Board.DefaultBoardWidth, GameConstant.Board.DefaultBoardHeight);
 
-            Engine engine = new Engine(drawManager, snake);
+            Engine engine = new Engine(drawManager, snake, boardCoordinate);
 
             engine.Run();
         }

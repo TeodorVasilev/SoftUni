@@ -1,10 +1,10 @@
 ﻿namespace SimpleSnake.GameObjects
 {
-    using SimpleSnake.Enums;
-    using System;
+	using SimpleSnake.Constants;
+	using SimpleSnake.Enums;
+	using SimpleSnake.GameObjects.Foods;
 	using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
+	using System.Linq;
 
 	public class Snake
 	{
@@ -57,12 +57,21 @@
 			return newHeadCoordinate;
 		}
 
+		public void Eat(Food food)
+		{
+			for (int i = 0; i < food.Points; i++)
+			{
+				Coordinate newHeadCoordinate = this.GetNewHeadCoordinates();
+				this.snakeBody.Add(newHeadCoordinate);
+			}
+		}
+
 		private void InitializeBody()
 		{
-			int x = DefaultX;
-			int y = DefaultY;
-
-			for (int i = 0; i <= DefaultLenth; i++)
+			int x = GameConstant.Snake.DefaultX;
+			int y = GameConstant.Snake.DefaultY;
+			//TODO change increasing of snake lenght to increase tail
+			for (int i = 0; i <= GameConstant.Snake.DefaultLength; i++)
 			{
 				this.snakeBody.Add(new Coordinate(x, y));
 				x++;

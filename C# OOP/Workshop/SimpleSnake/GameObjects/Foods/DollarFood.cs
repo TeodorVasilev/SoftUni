@@ -1,16 +1,11 @@
 ﻿namespace SimpleSnake.GameObjects.Foods
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Text;
+	using SimpleSnake.Constants;
 
 	public class DollarFood : Food
 	{
-		private const string FoodSymbol = "$";
-		private const int FoodPoints = 2;
-
 		public DollarFood(Coordinate foodCoordinate) 
-			: base(FoodSymbol, FoodPoints, foodCoordinate)
+			: base(GameConstant.Food.DollarSymbol, GameConstant.Food.DollarPoints, foodCoordinate)
 		{
 		}
 	}

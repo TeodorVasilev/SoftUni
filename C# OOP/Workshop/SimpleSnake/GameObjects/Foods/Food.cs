@@ -1,9 +1,5 @@
 ﻿namespace SimpleSnake.GameObjects.Foods
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Text;
-
 	public abstract class Food
 	{
 		public Food(string symbol, int points, Coordinate foodCoordinate)

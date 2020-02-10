@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SimpleSnake.GameObjects
+﻿namespace SimpleSnake.GameObjects
 {
 	public class Coordinate
 	{
