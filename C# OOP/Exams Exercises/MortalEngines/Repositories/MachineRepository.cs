@@ -31,6 +31,11 @@
 
         public bool Contains(string machineName)
         {
+            if(string.IsNullOrWhiteSpace(machineName))
+            {
+                throw new ArgumentNullException("Machine name cannot be null");
+            }
+
             var targetMachine = this.machines.FirstOrDefault(m => m.Name == machineName);
 
             if (targetMachine != null)
@@ -43,7 +48,7 @@
 
         public IMachine Get(string machineName)
         {
-            if(machineName == null)
+            if (string.IsNullOrWhiteSpace(machineName))
             {
                 throw new ArgumentNullException("Machine name cannot be null");
             }

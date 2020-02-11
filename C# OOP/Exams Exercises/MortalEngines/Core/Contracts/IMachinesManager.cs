@@ -8,16 +8,19 @@
 
         string ManufactureFighter(string name, double attackPoints, double defensePoints);
 
-        string EngageMachine(string selectedPilotName, string selectedMachineName);
+        //EngageMachine
+        string Engage(string selectedPilotName, string selectedMachineName);
 
-        string AttackMachines(string attackingMachineName, string defendingMachineName);
+        //AttackMachines
+        string Attack(string attackingMachineName, string defendingMachineName);
 
         string PilotReport(string pilotReporting);
 
         string MachineReport(string machineName);
+        //ToggleFighterAggressiveMode
+        string AggressiveMode(string fighterName);
 
-        string ToggleFighterAggressiveMode(string fighterName);
-
-        string ToggleTankDefenseMode(string tankName);
+        //ToggleTankDefenseMode
+        string DefenseMode(string tankName);
     }
 }

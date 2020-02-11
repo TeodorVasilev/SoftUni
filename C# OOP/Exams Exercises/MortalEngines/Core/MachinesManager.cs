@@ -61,7 +61,7 @@
                 fighter.DefensePoints, fighter.AggressiveModeToString());
         }
 
-        public string EngageMachine(string selectedPilotName, string selectedMachineName)
+        public string Engage(string selectedPilotName, string selectedMachineName)
         {
             if(!pilotRepository.Contains(selectedPilotName))
             {
@@ -89,9 +89,50 @@
             return string.Format(OutputMessages.MachineEngaged, selectedPilotName, selectedMachineName);
         }
 
-        public string AttackMachines(string attackingMachineName, string defendingMachineName)
+        //output messages
+        //if one of the machines doesn't exist, the attacking machine is with priority????????
+        //--if the two machines doesn't exist print Atacking machne name!?
+
+        //if one of the machines has health equal to zero, the attacking machine is with priority???????
+        //--if the two machines health are equal to zero, print the attacking machine name!?
+
+        //When machine is dead?
+        //--if machine currentHealth is zero -- is DEAD!?
+        //NOT SURE TEST!
+        public string Attack(string attackingMachineName, string defendingMachineName)
         {
-            throw new System.NotImplementedException();
+            if (!machineRepository.Contains(attackingMachineName) && !machineRepository.Contains(defendingMachineName))
+            {
+                return string.Format(OutputMessages.MachineNotFound, attackingMachineName);
+            }
+            else if(!machineRepository.Contains(attackingMachineName))
+            {
+                return string.Format(OutputMessages.MachineNotFound, attackingMachineName);
+            }
+            else if(!machineRepository.Contains(defendingMachineName))
+            {
+                return string.Format(OutputMessages.MachineNotFound, defendingMachineName);
+            }
+
+            var attackingMachine = machineRepository.Get(attackingMachineName);
+            var defendingMachine = machineRepository.Get(defendingMachineName);
+
+            if(attackingMachine.HealthPoints <= 0 && defendingMachine.HealthPoints <= 0)
+            {
+                return string.Format(OutputMessages.DeadMachineCannotAttack, attackingMachineName);
+            }
+            else if(attackingMachine.HealthPoints <= 0)
+            {
+                return string.Format(OutputMessages.DeadMachineCannotAttack, attackingMachineName);
+            }
+            else if(defendingMachine.HealthPoints <= 0)
+            {
+                return string.Format(OutputMessages.DeadMachineCannotAttack, defendingMachineName);
+            }
+
+            attackingMachine.Attack(defendingMachine);
+
+            return string.Format(OutputMessages.AttackSuccessful, defendingMachineName, attackingMachineName, defendingMachine.HealthPoints);
         }
 
         public string PilotReport(string pilotReporting)
@@ -118,7 +159,7 @@
             return string.Format(OutputMessages.MachineNotFound, machineName);
         }
 
-        public string ToggleFighterAggressiveMode(string fighterName)
+        public string AggressiveMode(string fighterName)
         {
             if (machineRepository.Contains(fighterName))
             {
@@ -132,7 +173,7 @@
             return string.Format(OutputMessages.MachineNotFound, fighterName);
         }
 
-        public string ToggleTankDefenseMode(string tankName)
+        public string DefenseMode(string tankName)
         {
             if(machineRepository.Contains(tankName))
             {

@@ -32,6 +32,11 @@
         //string null chek
         public bool Contains(string pilotName)
         {
+            if (string.IsNullOrWhiteSpace(pilotName))
+            {
+                throw new ArgumentNullException("Pilot name cannot be null");
+            }
+
             var targetPilot = this.pilots.FirstOrDefault(x => x.Name == pilotName);
 
             if(targetPilot != null)
@@ -44,9 +49,9 @@
 
         public IPilot Get(string pilotName)
         {
-            if(pilotName == null)
+            if(string.IsNullOrWhiteSpace(pilotName))
             {
-                throw new ArgumentNullException("Pilot cannot be null");
+                throw new ArgumentNullException("Pilot name cannot be null");
             }
 
             var targetPilot = this.pilots.FirstOrDefault(x => x.Name == pilotName);
