@@ -19,24 +19,16 @@
             {
                 int index = numbers.IndexOf(number);
 
-                if (index - power < 0)
+                int removeIndex = Math.Max(0, index - power);
+                int removeCount = Math.Min(numbers.Count - 1, index + power);
+
+                for (int i = removeCount; i >= removeIndex; i--)
                 {
-                    numbers.RemoveRange(0, power * 2 + 1);
-                }
-                else if(power * 2 + 1 > numbers.Count - 1)
-                {
-                    numbers.RemoveRange(index - power, numbers.Count - 2);
-                }
-                else
-                {
-                    numbers.RemoveRange(index - power, power * 2 + 1);
+                    numbers.RemoveAt(i);
                 }
             }
 
             Console.WriteLine(numbers.Sum());
-
-            //1 1 2 1 1 1 2 1 1 1 2 1 1 2
-            //2 1
         }
     }
 }
