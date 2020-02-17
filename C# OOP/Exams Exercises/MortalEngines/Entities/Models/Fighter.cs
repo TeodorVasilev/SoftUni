@@ -80,7 +80,7 @@
                 sb.AppendLine($" *Aggressive: OFF");
             }
 
-            return base.ToString() + sb.ToString();
+            return base.ToString() + sb.ToString().Trim();
         }
     }
 }
