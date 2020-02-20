@@ -8,7 +8,7 @@
     {
         static void Main(string[] args)
         {
-            List<string> frogNames = Console.ReadLine().Split().ToList();
+            List<string> frogNames = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries).ToList();
 
             while (true)
             {
@@ -19,7 +19,11 @@
                 if(command == "Join")
                 {
                     string name = inputArgs[1];
-                    frogNames.Add(name);
+
+                    if(!frogNames.Contains(name))
+                    {
+                        frogNames.Add(name);
+                    }
                 }
                 else if(command == "Jump")
                 {
@@ -44,40 +48,37 @@
                 {
                     int count = int.Parse(inputArgs[1]);
 
-                    if (count > frogNames.Count - 1)
+                    if(count >= frogNames.Count)
                     {
-                        Console.WriteLine(string.Join(" ", frogNames));
+                        count = frogNames.Count;
                     }
-                    else
-                    {
-                        for (int i = 0; i < count; i++)
-                        {
-                            Console.Write(frogNames[i] + " ");
-                        }
-                    }
+
+                    List<string> temp = new List<string>();
+
+                    temp = frogNames.Take(count).Select(x => x).ToList();
+
+                    Console.WriteLine(string.Join(" ", temp));
                 }
                 else if(command == "Last")
                 {
                     int count = int.Parse(inputArgs[1]);
 
-                    if(count > frogNames.Count - 1)
+                    if (count >= frogNames.Count)
                     {
-                        Console.WriteLine(string.Join(" ", frogNames));
-                    }
-                    else
-                    {
-                        List<string> temp = new List<string>();
-
-                        for (int i = frogNames.Count - 1; i > count + 1; i--)
-                        {
-                            temp.Add(frogNames[i]);
-                        }
-
-                        temp.Reverse();
-
-                        Console.WriteLine(string.Join(" ", temp));
+                        count = frogNames.Count;
                     }
 
+                    List<string> temp = new List<string>();
+
+                    frogNames.Reverse();
+
+                    temp = frogNames.Take(count).Select(x => x).ToList();
+
+                    temp.Reverse();
+
+                    frogNames.Reverse();
+
+                    Console.WriteLine(string.Join(" ", temp));
                 }
                 else if(command == "Print")
                 {
