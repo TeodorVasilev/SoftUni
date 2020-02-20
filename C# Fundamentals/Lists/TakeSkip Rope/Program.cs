@@ -10,25 +10,19 @@
         static void Main(string[] args)
         {
             string text = Console.ReadLine();
-
-            char[] textSplit = text.ToCharArray();
-
             List<int> numbers = new List<int>();
-            List<char> letters = new List<char>();
+            List<string> letters = new List<string>();
 
-            for (int i = 0; i < textSplit.Length; i++)
+            for (int i = 0; i < text.Length; i++)
             {
-                char symbol = textSplit[i];
-
-                if(char.IsDigit(symbol))
+                if(char.IsDigit(text[i]))
                 {
-                    int number = int.Parse(new string(symbol, 1));
+                    int number = int.Parse(text[i].ToString());
                     numbers.Add(number);
                 }
-
-                if (char.IsLetter(symbol) || char.IsPunctuation(symbol))
+                else
                 {
-                    letters.Add(symbol);
+                    letters.Add(text[i].ToString());
                 }
             }
 
@@ -47,11 +41,22 @@
                 }
             }
 
-            char[] lettersToCharArr = letters.ToArray();
+            StringBuilder sb = new StringBuilder();
 
-            string lettersToString = new string(lettersToCharArr);
+            int indexForSkip = 0;
 
-            //string result = string.Empty;
+            for (int i = 0; i < takeList.Count; i++)
+            {
+                List<string> temp = new List<string>(letters);
+
+                temp = temp.Skip(indexForSkip).Take(takeList[i]).ToList();
+
+                sb.Append(string.Join("", temp));
+
+                indexForSkip += takeList[i] + skipList[i];
+            }
+
+            Console.WriteLine(sb.ToString());
         }
     }
 }
