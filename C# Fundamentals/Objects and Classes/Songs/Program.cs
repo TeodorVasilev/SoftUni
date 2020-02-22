@@ -4,15 +4,6 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    public class Song
-    {
-        public string  TypeList { get; set; }
-
-        public string  Name { get; set; }
-
-        public string Time { get; set; }
-    }
-
     public class Program
     {
         static void Main(string[] args)
