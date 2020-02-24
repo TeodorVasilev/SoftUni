@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Text;
 
     public class Team
     {
@@ -19,9 +20,24 @@
 
         public List<string> Members { get; set; }
 
-        public void AddMember()
+        public void AddMember(string username)
         {
+            this.Members.Add(username);
+        }
 
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine($"{this.Name}");
+            sb.AppendLine($"-{this.Creator}");
+
+            foreach (var member in this.Members)
+            {
+                sb.AppendLine($"--{member}");
+            }
+
+            return sb.ToString().Trim();
         }
     }
 
@@ -59,13 +75,6 @@
                 {
                     Console.WriteLine($"Team {team.Name} was already created!");
                 }
-
-            }
-
-            string input = Console.ReadLine();
-
-            while (input != "end of assignment")
-            {
 
             }
         }

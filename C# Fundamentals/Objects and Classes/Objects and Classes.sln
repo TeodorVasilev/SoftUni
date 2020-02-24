@@ -15,13 +15,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Students", "Students\Studen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store Boxes", "Store Boxes\Store Boxes.csproj", "{EE8AB28B-E447-4AFA-A503-395A24908DA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advertisement Message", "Advertisement Message\Advertisement Message.csproj", "{2AB19084-5CCC-4B2C-99AA-4DF9744FA863}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advertisement Message", "Advertisement Message\Advertisement Message.csproj", "{2AB19084-5CCC-4B2C-99AA-4DF9744FA863}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles", "Articles\Articles.csproj", "{67618513-2B05-4D29-891E-5AF29521ED78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Articles", "Articles\Articles.csproj", "{67618513-2B05-4D29-891E-5AF29521ED78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Students 2.0", "Students 2.0\Students 2.0.csproj", "{DBBD2572-D932-4975-884B-2AFA15B67B03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Students 2.0", "Students 2.0\Students 2.0.csproj", "{DBBD2572-D932-4975-884B-2AFA15B67B03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teamwork Projects", "Teamwork Projects\Teamwork Projects.csproj", "{FF547F76-285D-47E8-B529-D629D03545D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teamwork Projects", "Teamwork Projects\Teamwork Projects.csproj", "{FF547F76-285D-47E8-B529-D629D03545D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicle Catalogue", "Vehicle Catalogue\Vehicle Catalogue.csproj", "{CFF4A0CD-824A-45BD-B51F-679322340E5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order by Age", "Order by Age\Order by Age.csproj", "{E15790AA-4EE2-4DC0-8A32-E2DFD70AE8C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{FF547F76-285D-47E8-B529-D629D03545D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF547F76-285D-47E8-B529-D629D03545D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF547F76-285D-47E8-B529-D629D03545D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFF4A0CD-824A-45BD-B51F-679322340E5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF4A0CD-824A-45BD-B51F-679322340E5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF4A0CD-824A-45BD-B51F-679322340E5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF4A0CD-824A-45BD-B51F-679322340E5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E15790AA-4EE2-4DC0-8A32-E2DFD70AE8C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E15790AA-4EE2-4DC0-8A32-E2DFD70AE8C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E15790AA-4EE2-4DC0-8A32-E2DFD70AE8C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E15790AA-4EE2-4DC0-8A32-E2DFD70AE8C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
