@@ -3,43 +3,6 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-
-    public class Team
-    {
-        public Team(string creatorName, string name)
-        {
-            this.Name = name;
-            this.Creator = creatorName;
-            this.Members = new List<string>();
-        }
-
-        public string Name { get; set; }
-
-        public string Creator { get; set; }
-
-        public List<string> Members { get; set; }
-
-        public void AddMember(string username)
-        {
-            this.Members.Add(username);
-        }
-
-        public override string ToString()
-        {
-            StringBuilder sb = new StringBuilder();
-
-            sb.AppendLine($"{this.Name}");
-            sb.AppendLine($"-{this.Creator}");
-
-            foreach (var member in this.Members)
-            {
-                sb.AppendLine($"--{member}");
-            }
-
-            return sb.ToString().Trim();
-        }
-    }
 
     class Program
     {
@@ -51,19 +14,18 @@
 
             for (int i = 0; i < teamsToRegister; i++)
             {
-                string[] creatorTeam = Console.ReadLine().Split('-');
+                string[] newTeam = Console.ReadLine().Split('-');
 
-                string creatorName = creatorTeam[0];
-                string teamName = creatorTeam[1];
+                string creatorName = newTeam[0];
+                string teamName = newTeam[1];
 
                 Team team = new Team(creatorName, teamName);
 
-                if(!teams.Select(t => t.Name).Contains(team.Name))
+                if (!teams.Select(t => t.Name).Contains(teamName))
                 {
-                    if(!teams.Select(t => t.Creator).Contains(team.Creator))
+                    if(!teams.Select(t => t.Creator).Contains(creatorName))
                     {
                         teams.Add(team);
-
                         Console.WriteLine($"Team {team.Name} has been created by {team.Creator}!");
                     }
                     else
@@ -75,7 +37,49 @@
                 {
                     Console.WriteLine($"Team {team.Name} was already created!");
                 }
+            }
 
+            string membersRegistration = Console.ReadLine();
+
+            while (membersRegistration != "end of assignment")
+            {
+                string[] memberTeam = membersRegistration.Split("->");
+
+                string memberName = memberTeam[0];
+                string teamName = memberTeam[1];
+
+                if(!teams.Select(t => t.Name).Contains(teamName))
+                {
+                    Console.WriteLine($"Team {teamName} does not exist!");
+                }
+                else if (teams.Select(x => x.Members).Any(x => x.Contains(memberName)) || teams.Select(x => x.Creator).Contains(memberName))
+                {
+                    Console.WriteLine($"Member {memberName} cannot join team {teamName}!");
+                }
+                else
+                {
+                    Team team = teams.FirstOrDefault(t => t.Name == teamName);
+
+                    team.AddMember(memberName);
+                }
+
+                membersRegistration = Console.ReadLine();
+            }
+
+            var disbanded = teams.OrderBy(t => t.Name).Where(t => t.Members.Count == 0);
+
+            var sorted = teams.OrderByDescending(x => x.Members.Count).ThenBy(x => x.Name).Where(x => x.Members.Count > 0);
+
+            foreach (var team in sorted)
+            {
+                Console.WriteLine(team);
+            }
+
+            Console.WriteLine("Teams to disband:");
+
+            foreach (var team in disbanded)
+            {
+                Console.WriteLine(team.Name);
             }
         }
     }
