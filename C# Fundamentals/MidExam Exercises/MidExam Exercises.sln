@@ -9,11 +9,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks Planner", "Tasks Plan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Froggy Squad", "Froggy Squad\Froggy Squad.csproj", "{C50ACE9F-F314-46C5-8993-FB82C4C10037}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Disneyland Journey", "Disneyland Journey\Disneyland Journey.csproj", "{6AF7E0B9-DCC0-4D8D-BD02-EFF4C562D3CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Disneyland Journey", "Disneyland Journey\Disneyland Journey.csproj", "{6AF7E0B9-DCC0-4D8D-BD02-EFF4C562D3CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archery Tournament", "Archery Tournament\Archery Tournament.csproj", "{D77CFAE8-A759-4B70-A62E-820E4632E161}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archery Tournament", "Archery Tournament\Archery Tournament.csproj", "{D77CFAE8-A759-4B70-A62E-820E4632E161}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School Library", "School Library\School Library.csproj", "{488EB73E-EB1E-4801-8A80-832885B1A335}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "School Library", "School Library\School Library.csproj", "{488EB73E-EB1E-4801-8A80-832885B1A335}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experience Gaining", "Experience Gaining\Experience Gaining.csproj", "{DBAF7E8E-925A-4844-B3E2-FBDD45F17A01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Friendlist Maintenance", "Friendlist Maintenance\Friendlist Maintenance.csproj", "{BF0BF801-AEF9-40DD-A42D-F846AE499B16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tanks Collector", "Tanks Collector\Tanks Collector.csproj", "{3C9AC414-7564-49C8-A7CA-2B7FC2261ACD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biscuits Factory", "Biscuits Factory\Biscuits Factory.csproj", "{4E309ADB-0ADF-462E-B9CB-BC310F50AD30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weaponsmith", "Weaponsmith\Weaponsmith.csproj", "{C658F012-4D51-4CD4-84AF-BD19A8BA1C0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wizard Poker", "Wizard Poker\Wizard Poker.csproj", "{ABC1F26C-D6AA-44E5-8F92-55A4685CFCD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +57,30 @@ Global
 		{488EB73E-EB1E-4801-8A80-832885B1A335}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{488EB73E-EB1E-4801-8A80-832885B1A335}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{488EB73E-EB1E-4801-8A80-832885B1A335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBAF7E8E-925A-4844-B3E2-FBDD45F17A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBAF7E8E-925A-4844-B3E2-FBDD45F17A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBAF7E8E-925A-4844-B3E2-FBDD45F17A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBAF7E8E-925A-4844-B3E2-FBDD45F17A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF0BF801-AEF9-40DD-A42D-F846AE499B16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF0BF801-AEF9-40DD-A42D-F846AE499B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF0BF801-AEF9-40DD-A42D-F846AE499B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF0BF801-AEF9-40DD-A42D-F846AE499B16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C9AC414-7564-49C8-A7CA-2B7FC2261ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C9AC414-7564-49C8-A7CA-2B7FC2261ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C9AC414-7564-49C8-A7CA-2B7FC2261ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C9AC414-7564-49C8-A7CA-2B7FC2261ACD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E309ADB-0ADF-462E-B9CB-BC310F50AD30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E309ADB-0ADF-462E-B9CB-BC310F50AD30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E309ADB-0ADF-462E-B9CB-BC310F50AD30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E309ADB-0ADF-462E-B9CB-BC310F50AD30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C658F012-4D51-4CD4-84AF-BD19A8BA1C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C658F012-4D51-4CD4-84AF-BD19A8BA1C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C658F012-4D51-4CD4-84AF-BD19A8BA1C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C658F012-4D51-4CD4-84AF-BD19A8BA1C0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABC1F26C-D6AA-44E5-8F92-55A4685CFCD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABC1F26C-D6AA-44E5-8F92-55A4685CFCD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABC1F26C-D6AA-44E5-8F92-55A4685CFCD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABC1F26C-D6AA-44E5-8F92-55A4685CFCD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
