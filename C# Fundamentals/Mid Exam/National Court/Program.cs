@@ -12,7 +12,7 @@ namespace National_Court
             int totalPeopleCount = int.Parse(Console.ReadLine());
 
             int peoplePerHour = firstDeskPeople + secondDeskPeople + thirdDeskPeople;
-            int hours = 0;
+            int hoursCnt = 0;
 
             int serviced = 0;
 
@@ -20,16 +20,16 @@ namespace National_Court
             {
                 serviced += peoplePerHour;
                 totalPeopleCount -= peoplePerHour;
-                hours++;
+                hoursCnt++;
 
-                if(hours % 4 == 0)
+                if(hoursCnt % 4 == 0)
                 {
-                    hours++;
+                    hoursCnt++;
                     continue;
                 }
             }
 
-            Console.WriteLine($"Time needed: {hours}h.");
+            Console.WriteLine($"Time needed: {hoursCnt}h.");
         }
     }
 }
