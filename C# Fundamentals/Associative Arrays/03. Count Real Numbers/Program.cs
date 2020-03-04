@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _03.Count_Real_Numbers
+﻿namespace _03.Count_Real_Numbers
 {
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+
 	class Program
 	{
 		static void Main(string[] args)
