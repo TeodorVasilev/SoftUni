@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace MinersTask
+﻿namespace MinersTask
 {
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+
 	public class MinerTask
 	{
 		public static void Main()

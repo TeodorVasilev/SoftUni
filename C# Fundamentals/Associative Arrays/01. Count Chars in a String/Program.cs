@@ -1,16 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _01.Count_Chars_in_a_String
+﻿namespace _01.Count_Chars_in_a_String
 {
-	class Program
+	using System;
+    using System.Collections.Generic;
+
+    class Program
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Test");
+			char[] letters = Console.ReadLine().ToCharArray();
+
+			Dictionary<char, int> letCnt = new Dictionary<char, int>();
+
+			for (int i = 0; i < letters.Length; i++)
+			{
+				if(letters[i] != ' ')
+				{
+					if(!letCnt.ContainsKey(letters[i]))
+					{
+						letCnt[letters[i]] = 1;
+					}
+					else
+					{
+						letCnt[letters[i]]++;
+					}
+				}
+			}
+
+			foreach (var kvp in letCnt)
+			{
+				Console.WriteLine($"{kvp.Key} -> {kvp.Value}");
+			}
 		}
 	}
 }
