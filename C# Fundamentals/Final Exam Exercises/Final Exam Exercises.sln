@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warrior’s Quest", "Warrior’s Quest\Warrior’s Quest.csproj", "{288D9A89-3BA0-4102-BB5D-B2AFE38485CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boss Rush", "Boss Rush\Boss Rush.csproj", "{D0B5C7AF-FE64-4C94-AA7B-A53BBEBDDD6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hero Recruitment", "Hero Recruitment\Hero Recruitment.csproj", "{99B46AC9-FE0A-48B6-A6EE-0C5E0972FDFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{288D9A89-3BA0-4102-BB5D-B2AFE38485CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{288D9A89-3BA0-4102-BB5D-B2AFE38485CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{288D9A89-3BA0-4102-BB5D-B2AFE38485CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0B5C7AF-FE64-4C94-AA7B-A53BBEBDDD6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0B5C7AF-FE64-4C94-AA7B-A53BBEBDDD6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0B5C7AF-FE64-4C94-AA7B-A53BBEBDDD6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0B5C7AF-FE64-4C94-AA7B-A53BBEBDDD6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99B46AC9-FE0A-48B6-A6EE-0C5E0972FDFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99B46AC9-FE0A-48B6-A6EE-0C5E0972FDFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99B46AC9-FE0A-48B6-A6EE-0C5E0972FDFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99B46AC9-FE0A-48B6-A6EE-0C5E0972FDFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

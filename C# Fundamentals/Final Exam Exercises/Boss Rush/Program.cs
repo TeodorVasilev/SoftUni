@@ -1,7 +1,6 @@
 ﻿namespace Boss_Rush
 {
     using System;
-    using System.Linq;
     using System.Text.RegularExpressions;
 
     class Program
@@ -14,21 +13,28 @@
             {
                 string input = Console.ReadLine();
 
-                Regex rgx = new Regex("[|][A-Z]{4,}[|]:[#][A-Z][a-z]+ [a-z]+#");
+                Regex rgx = new Regex(@"([|])([A-Z]{4,})\1:([#])([A-Za-z]+ [A-Za-z]+)\3");
 
-                bool isMatch = rgx.IsMatch(input);
+                var matches = rgx.Matches(input);
 
-                if(isMatch)
+                string name = "";
+                string title = "";
+
+                foreach (Match match in matches)
                 {
-                    string[] bossArgs = input.Split('|', ':', '#');
-                    bossArgs = bossArgs.Where(x => x != "").ToArray();
+                    name = match.Groups[2].Value;
+                    title = match.Groups[4].Value;
+                }
 
-                    string name = bossArgs[0];
-                    string title = bossArgs[1];
-
+                if (name != "")
+                {
                     Console.WriteLine($"{name}, The {title}");
-                    Console.WriteLine($"Strength: {name.Length}");
-                    Console.WriteLine($"Armour: {title.Length}");
+                    Console.WriteLine($">> Strength: {name.Length}");
+                    Console.WriteLine($">> Armour: {title.Length}");
+                }
+                else
+                {
+                    Console.WriteLine("Access denied!");
                 }
             }
         }
