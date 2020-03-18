@@ -8,38 +8,32 @@
     {
         static void Main(string[] args)
         {
-            List<char> text = Console.ReadLine().ToCharArray().ToList();
+            string[] text = Console.ReadLine().Split('>');
 
-            for (int i = 0; i < text.Count; i++)
+            int power = 0;
+            int reminder = 0;
+
+            for (int i = 1; i < text.Length; i++)
             {
-                char letter = text[i];
-                int reminder = 0;
+                power = int.Parse("" + text[i][0]) + reminder;
+                reminder = power - text[i].Length;
 
-                if(letter == '>')
+                if (power > text[i].Length)
                 {
-                    int index = i + 1;
-                    bool parsed = int.TryParse(text[index].ToString(), out int power);
+                    power = text[i].Length;
+                }
 
-                    if(!parsed)
-                    {
-                        break;
-                    }
+                text[i] = text[i].Substring(power);
 
-                    for (int k = index; k < index + power + reminder; k++)
-                    {
-                        if(text[k] != '>')
-                        {
-                            text.RemoveAt(k);
-                        }
-                        else
-                        {
-                            reminder++;
-                        }
-                    }
+                if(reminder < 0)
+                {
+                    reminder = 0;
                 }
             }
 
-            Console.WriteLine(string.Join("", text));
+            string result = string.Join(">", text);
+            Console.WriteLine(result);
+
         }
     }
 }
