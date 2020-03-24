@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Match Dates", "Match Dates\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Furniture", "Furniture\Furniture.csproj", "{AD109EFD-1798-4C2D-84AC-478250FC38D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Race", "Race\Race.csproj", "{3D4BEFFC-E515-4133-9FE6-18EBBD5B3195}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Race", "Race\Race.csproj", "{3D4BEFFC-E515-4133-9FE6-18EBBD5B3195}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftUni Bar Income", "SoftUni Bar Income\SoftUni Bar Income.csproj", "{FEE99735-F239-4A98-8628-A7715E01DBBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoftUni Bar Income", "SoftUni Bar Income\SoftUni Bar Income.csproj", "{FEE99735-F239-4A98-8628-A7715E01DBBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Star Enigma", "Star Enigma\Star Enigma.csproj", "{6D4DB3E7-738F-40C0-B949-3372793CE64C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{FEE99735-F239-4A98-8628-A7715E01DBBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEE99735-F239-4A98-8628-A7715E01DBBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEE99735-F239-4A98-8628-A7715E01DBBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D4DB3E7-738F-40C0-B949-3372793CE64C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D4DB3E7-738F-40C0-B949-3372793CE64C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D4DB3E7-738F-40C0-B949-3372793CE64C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D4DB3E7-738F-40C0-B949-3372793CE64C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
