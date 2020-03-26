@@ -15,7 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Race", "Race\Race.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoftUni Bar Income", "SoftUni Bar Income\SoftUni Bar Income.csproj", "{FEE99735-F239-4A98-8628-A7715E01DBBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Star Enigma", "Star Enigma\Star Enigma.csproj", "{6D4DB3E7-738F-40C0-B949-3372793CE64C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Star Enigma", "Star Enigma\Star Enigma.csproj", "{6D4DB3E7-738F-40C0-B949-3372793CE64C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nether Realms", "Nether Realms\Nether Realms.csproj", "{E87B038E-FD07-4F95-B779-5DD238286D2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extract Email", "Extract Email\Extract Email.csproj", "{668C9935-948C-46D9-B4B5-43FB2F56D10F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{6D4DB3E7-738F-40C0-B949-3372793CE64C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D4DB3E7-738F-40C0-B949-3372793CE64C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D4DB3E7-738F-40C0-B949-3372793CE64C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E87B038E-FD07-4F95-B779-5DD238286D2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E87B038E-FD07-4F95-B779-5DD238286D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E87B038E-FD07-4F95-B779-5DD238286D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E87B038E-FD07-4F95-B779-5DD238286D2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{668C9935-948C-46D9-B4B5-43FB2F56D10F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{668C9935-948C-46D9-B4B5-43FB2F56D10F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{668C9935-948C-46D9-B4B5-43FB2F56D10F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{668C9935-948C-46D9-B4B5-43FB2F56D10F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
