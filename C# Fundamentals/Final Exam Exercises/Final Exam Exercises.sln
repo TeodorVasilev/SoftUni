@@ -21,11 +21,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Registration", "Registratio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inbox Manager", "Inbox Manager\Inbox Manager.csproj", "{D25639DC-8C1E-4F93-B59B-4EE5EAB2A995}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Username", "Username\Username.csproj", "{EB9C6546-DBAE-4833-8CC9-6F037791D6BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Username", "Username\Username.csproj", "{EB9C6546-DBAE-4833-8CC9-6F037791D6BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Password", "Password\Password.csproj", "{69251FE2-4422-45E8-A7F1-78FD9C0F5569}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Password", "Password\Password.csproj", "{69251FE2-4422-45E8-A7F1-78FD9C0F5569}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Followers", "Followers\Followers.csproj", "{20448A40-5C23-4D12-A701-0DAF559FD007}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Followers", "Followers\Followers.csproj", "{20448A40-5C23-4D12-A701-0DAF559FD007}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String Manipulator Group 2", "String Manipulator Group 2\String Manipulator Group 2.csproj", "{0F8F1509-9FE9-48BD-8EC1-F04CBC4D9DBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message Encrypter", "Message Encrypter\Message Encrypter.csproj", "{166E21B2-91F1-4533-9946-FDE42E0DE428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battle Manager", "Battle Manager\Battle Manager.csproj", "{071B232B-6502-4DE6-A1C2-866DB345A1D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +87,18 @@ Global
 		{20448A40-5C23-4D12-A701-0DAF559FD007}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20448A40-5C23-4D12-A701-0DAF559FD007}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20448A40-5C23-4D12-A701-0DAF559FD007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F8F1509-9FE9-48BD-8EC1-F04CBC4D9DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F8F1509-9FE9-48BD-8EC1-F04CBC4D9DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F8F1509-9FE9-48BD-8EC1-F04CBC4D9DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F8F1509-9FE9-48BD-8EC1-F04CBC4D9DBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{166E21B2-91F1-4533-9946-FDE42E0DE428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{166E21B2-91F1-4533-9946-FDE42E0DE428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{166E21B2-91F1-4533-9946-FDE42E0DE428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{166E21B2-91F1-4533-9946-FDE42E0DE428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{071B232B-6502-4DE6-A1C2-866DB345A1D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{071B232B-6502-4DE6-A1C2-866DB345A1D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{071B232B-6502-4DE6-A1C2-866DB345A1D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{071B232B-6502-4DE6-A1C2-866DB345A1D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
