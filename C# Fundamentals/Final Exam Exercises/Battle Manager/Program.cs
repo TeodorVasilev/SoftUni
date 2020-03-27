@@ -88,7 +88,6 @@
             Console.WriteLine($"People count: {userHealth.Count}");
 
             var sorted = userHealth.OrderByDescending(x => x.Value).ThenBy(x => x.Key);
-            //var energySorted = userEnergy.OrderByDescending(x => x.Value).ThenBy(x => x.Key);
 
             foreach (var kvp in sorted)
             {
