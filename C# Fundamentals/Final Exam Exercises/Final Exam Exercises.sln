@@ -43,9 +43,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concert", "Concert\Concert.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Song Encryption", "Song Encryption\Song Encryption.csproj", "{808511A8-5C1A-4B06-93CA-05F6A642262B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Isle of Man TT Race", "The Isle of Man TT Race\The Isle of Man TT Race.csproj", "{2EBA00ED-5FFF-4C10-AA9D-29DE5493B890}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "The Isle of Man TT Race", "The Isle of Man TT Race\The Isle of Man TT Race.csproj", "{2EBA00ED-5FFF-4C10-AA9D-29DE5493B890}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice Sessions", "Practice Sessions\Practice Sessions.csproj", "{42F3765D-0B45-4F1A-9233-CC5DB8114AA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice Sessions", "Practice Sessions\Practice Sessions.csproj", "{42F3765D-0B45-4F1A-9233-CC5DB8114AA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arriving in Kathmandu", "Arriving in Kathmandu\Arriving in Kathmandu.csproj", "{6FF5F8FA-F7E3-4D85-B81A-5C723DB747F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "On the Way to Annapurna", "On the Way to Annapurna\On the Way to Annapurna.csproj", "{AA3928F4-E8F7-4CC4-AEAC-D13BC74C5292}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary", "Dictionary\Dictionary.csproj", "{C812D6B3-D1B7-4DBC-879A-21811BFC95C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +147,18 @@ Global
 		{42F3765D-0B45-4F1A-9233-CC5DB8114AA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42F3765D-0B45-4F1A-9233-CC5DB8114AA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42F3765D-0B45-4F1A-9233-CC5DB8114AA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FF5F8FA-F7E3-4D85-B81A-5C723DB747F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF5F8FA-F7E3-4D85-B81A-5C723DB747F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF5F8FA-F7E3-4D85-B81A-5C723DB747F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF5F8FA-F7E3-4D85-B81A-5C723DB747F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA3928F4-E8F7-4CC4-AEAC-D13BC74C5292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA3928F4-E8F7-4CC4-AEAC-D13BC74C5292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA3928F4-E8F7-4CC4-AEAC-D13BC74C5292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA3928F4-E8F7-4CC4-AEAC-D13BC74C5292}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C812D6B3-D1B7-4DBC-879A-21811BFC95C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C812D6B3-D1B7-4DBC-879A-21811BFC95C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C812D6B3-D1B7-4DBC-879A-21811BFC95C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C812D6B3-D1B7-4DBC-879A-21811BFC95C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
